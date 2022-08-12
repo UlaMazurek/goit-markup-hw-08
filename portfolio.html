@@ -5,27 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header> 
+    <header class="header"> 
         <!-- odwołanie do pliku index.html czy portfolio?-->
-        <h3><a href="./index.html"><span>Web</span>Studio</a></h3>
-        <nav>
-            <ul>
-                <li><a href="./index.html">Agencja</a></li>
-                <li><a href="./portfolio.html">Portfolio</a></li>
-                <li><a href="">Kontakt</a></li>
+        <h3 class="logo"><a class="logo-link" href="./index.html"><span class="web-logo">Web</span>Studio</a></h3>
+        <nav class="navigation">
+            <ul class="nav-menu">
+                <li class="nav-list"><a class="nav-link" href="./index.html">Agencja</a></li>
+                <li class="nav-list"><a class="nav-link" href="./portfolio.html">Portfolio</a></li>
+                <li class="nav-list"><a class="nav-link" href="">Kontakt</a></li>
             </ul>
         </nav>
-        <div>
-            <p><a href="mailto:info@devstudio.com">info@devstudio.com</a></p>
-            <p><a href="tel:+48111111111">+48 111 111 111</a></p>
+        <div>  
+            <!-- klasa dla div? -->
+            <p><a class="mail-link" href="mailto:info@devstudio.com">info@devstudio.com</a></p>
+            <p><a class="tel-link" href="tel:+48111111111">+48 111 111 111</a></p>
         </div>
     </header>
 
     <main>
         <section>
-            <ul>
+            <ul class="filters menu">
                 <li><button type="button">Wszystkie</button></li>
                 <li><button type="button">Strony</button></li>
                 <li><button type="button">Aplikacje</button></li>
@@ -35,67 +37,67 @@
         </section> 
 
         <section>
-            <ul>
+            <ul class="portfolio list">
                 <li>
                     <figure>
                         <img src="./images/photo1-portfolio.jpg" alt="laptop z grafiką" width="370" height="294" />
-                        <figcaption><b>Technocrack</b><br />
+                        <figcaption class="type"><b class="title">Technocrack</b><br />
                             Strona internetowa</figcaption>
                     </figure>
                 </li>
                 <li>
                     <figure>
                         <img src="./images/photo2-portfolio.jpg" alt="grafika gry w koszykówkę" width="370" height="294" />
-                        <figcaption><b>Grafika New Orlean vs Golden Star</b><br />
+                        <figcaption class="type"><b class="title">Grafika New Orlean vs Golden Star</b><br />
                             Dizajn</figcaption>
                     </figure>
                 </li>
                 <li>
                     <figure>
                         <img src="./images/photo3-portfolio.jpg" alt="logo restauracji" width="370" height="294" />
-                        <figcaption><b>Restauracja Seafood</b><br />
+                        <figcaption class="type"><b class="title">Restauracja Seafood</b><br />
                             Aplikacja</figcaption>
                     </figure>
                 </li>
                 <li>
                     <figure>
                         <img src="./images/photo4-portfolio.jpg" alt="słuchawki" width="370" height="294" />
-                        <figcaption><b>Projekt Prime</b><br />
+                        <figcaption class="type"><b class="title">Projekt Prime</b><br />
                             Marketing</figcaption>
                     </figure>
                 </li>
                 <li>
                     <figure>
                         <img src="./images/photo5-portfolio.jpg" alt="pudełka" width="370" height="294" />
-                        <figcaption><b>Projekt Boxes</b><br />
+                        <figcaption class="type"><b class="title">Projekt Boxes</b><br />
                             Aplikacja</figcaption>
                     </figure>
                 </li>
                 <li>
                     <figure>
                         <img src="./images/photo6-portfolio.jpg" alt="ekran monitora" width="370" height="294" />
-                        <figcaption><b>Inspiration has no Borders</b><br />
+                        <figcaption class="type"><b class="title">Inspiration has no Borders</b><br />
                             Strona internetowa</figcaption>
                     </figure>
                 </li>
                 <li>
                     <figure>
                         <img src="./images/photo7-portfolio.jpg" alt="otwarta gazeta" width="370" height="294" />
-                        <figcaption><b>Magazyn Limited Edition</b><br />
+                        <figcaption class="type"><b class="title">Magazyn Limited Edition</b><br />
                             Dizajn/figcaption>
                     </figure>
                 </li>
                 <li>
                     <figure>
                         <img src="./images/photo8-portfolio.jpg" alt="etykieta" width="370" height="294" />
-                        <figcaption><b>Projekt LAB</b><br />
+                        <figcaption class="type"><b class="title">Projekt LAB</b><br />
                             Marketing</figcaption>
                     </figure>
                 </li>
                 <li>
                     <figure>
                         <img src="./images/photo9-portfolio.jpg" alt="pisanie na klawiaturze laptopa" width="370" height="294" />
-                        <figcaption><b>Growing Business</b><br />
+                        <figcaption class="type"><b class="title">Growing Business</b><br />
                             Aplikacja</figcaption>
                     </figure>
                 </li>
@@ -104,11 +106,11 @@
     </main>
 
     <footer>
-        <h3><a href="./index.html"><span>Web</span>Studio</a></h3>
-        <address>m. Warszawa, Aleje Jerozolimskie 21</address>
+        <h3 class="logo"><a class="logo-link" href="./index.html"><span class="web-logo">Web</span>Studio</a></h3>
+        <address class="address">m. Warszawa, Aleje Jerozolimskie 21</address>
         <ul>
-            <li><a href="mailto:info@example.com">info@example.com</a></li>
-            <li><a href="tel:+48111111111">+48 111 111 111</a></li>
+            <li><a class="mail-link" href="mailto:info@example.com">info@example.com</a></li>
+            <li><a class="tel-link" href="tel:+48111111111">+48 111 111 111</a></li>
         </ul>
     </footer>
     
