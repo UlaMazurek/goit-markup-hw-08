@@ -1,5 +1,6 @@
 body {
-color: #212121; }
+color: #212121;
+background-color: #E5E5E5; }
 
 .logo {font-family: Raleway;
     font-weight: 700;
@@ -31,10 +32,33 @@ ul {list-style-type: none;}
 font-size: 14px;
 line-height: 1,17;}
 
-.contact-link {ext-decoration: none;
+.contact-link {text-decoration: none;
 color: #757575;}
 .contact-link:hover,
-.contact-link:focus {color: #2196F3; }
+.contact-link:focus {color: #2196F3;}
 
     /* jaki tu kolor? */
-.contact-link:active {color:#2196F3; }
+.contact-link:active {color:#2196F3;}
+
+.text-title {font-weight: 900;
+color: #FFFFFF;
+font-size: 44px;
+line-height: 1,36;
+}
+
+
+.button-active {font-weight: 700;
+color: #FFFFFF;
+font-size: 16px;
+line-height: 1,88;
+}
+
+.asset-title {font-weight: 700;
+    font-size: 14px;
+    line-height: 1,17;
+}
+
+.asset-description {font-weight: 400;
+    color: #757575;
+    font-size: 14px;
+    line-height: 1,71;}
