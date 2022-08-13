@@ -16,8 +16,7 @@ color: #212121; }
     font-size: 14px;
     line-height: 1,17;}
 
-.menu-link {text-decoration: none;
-}
+.menu-link {text-decoration: none;}
 .menu-link:hover,
 .menu-link:focus {color: 
     #2196F3; }
@@ -27,3 +26,15 @@ color: #212121; }
         #2196F3;}
 
 ul {list-style-type: none;}
+
+.contact {font-weight: 500;
+font-size: 14px;
+line-height: 1,17;}
+
+.contact-link {ext-decoration: none;
+color: #757575;}
+.contact-link:hover,
+.contact-link:focus {color: #2196F3; }
+
+    /* jaki tu kolor? */
+.contact-link:active {color:#2196F3; }
