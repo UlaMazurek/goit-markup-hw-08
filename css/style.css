@@ -22,15 +22,16 @@ background-color: #E5E5E5; }
 .menu-link:focus {color: 
     #2196F3; }
 
-    /* jaki tu kolor? */
-    .menu-link:active {color:
+/* jaki tu kolor? */
+.menu-link:active {color:
         #2196F3;}
 
 ul {list-style-type: none;}
 
 .contact {font-weight: 500;
 font-size: 14px;
-line-height: 1,17;}
+line-height: 1,17;
+text-align: right;}
 
 .contact-link {text-decoration: none;
 color: #757575;}
@@ -44,16 +45,19 @@ color: #757575;}
 color: #FFFFFF;
 font-size: 44px;
 line-height: 1,36;
+text-align: center;
 }
-
 
 .button-active {font-weight: 700;
 color: #FFFFFF;
 font-size: 16px;
 line-height: 1,88;
+text-align: center;
 }
+/* jak wycentrować? */
+.button {text-align: center;}
 
-.asset-title {font-weight: 700;
+.asset-list {font-weight: 700;
     font-size: 14px;
     line-height: 1,17;
 }
@@ -62,3 +66,18 @@ line-height: 1,88;
     color: #757575;
     font-size: 14px;
     line-height: 1,71;}
+
+.scope-title {font-weight: 700;
+    font-size: 36px;
+    line-height: 1,17;
+    text-align: center;}
+
+.scope-list {text-align: center;}
+
+/* czy do wszystkich h2 ustawić poniższe ustawienia? */
+.team-title {font-weight: 700;
+font-size: 36px;
+line-height: 1,17;
+text-align: center;
+}
+
