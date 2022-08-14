@@ -5,7 +5,8 @@ background-color: #E5E5E5; }
 .logo {font-family: Raleway;
     font-weight: 700;
     font-size: 26px
-    line-height: 1,17; 
+    line-height: 1,17;
+    color: #FFFFFF;  
 }
 
 .web-logo {color: 
@@ -41,18 +42,20 @@ color: #757575;}
     /* jaki tu kolor? */
 .contact-link:active {color:#2196F3;}
 
+.text {background-color: #2F303A;
+text-align: center; }
+
 .text-title {font-weight: 900;
 color: #FFFFFF;
 font-size: 44px;
 line-height: 1,36;
-text-align: center;
 }
 
 .button-active {font-weight: 700;
 color: #FFFFFF;
 font-size: 16px;
 line-height: 1,88;
-text-align: center;
+background-color:#2196F3;
 }
 /* jak wycentrować? */
 .button {text-align: center;}
@@ -94,19 +97,21 @@ color: #212121; }
 
 .team-list > li {text-align: center;}
 
+.down {background-color: #2F303A;}
+
 .place {
 font-size: 14px;
 line-height: 1,71;
 color: #FFFFFF; 
 font-style: normal;}
 
-.link {text-decoration: none;
+.contacts .link {text-decoration: none;
     color: #FFFFFF99;
     font-weight: 400;
     font-size: 14px;
     line-height: 1,71; }
 
-.link:hover,
-.link:focus {color: #2196F3;}
+.contacts .link:hover,
+.contacts .link:focus {color: #2196F3;}
 
-.link:active {color:#2196F3;}
+.contacts .link:active {color:#2196F3;}
