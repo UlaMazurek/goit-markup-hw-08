@@ -1,36 +1,41 @@
 body {font-family: "Roboto", "Raleway", sans-serif;
-color: #212121;
-background-color: var(--white); }
+      color: var(--main-color;
+      background-color: var(--white);
+    }
 
 :root {--active-color: #2196F3;
---white: #FFFFFF;
---beige: #757575;}
+        --white: #FFFFFF;
+        --beige: #757575;
+        --main-color: #212121;
+        }
 
-.logo {font-family: "Raleway"; 
-    font-weight: 700;
-    font-size: 26px
-    line-height: 1,17;
-    letter-spacing: 3%;  
-}
+.logo .logo-link {font-family: "Raleway", sans-serif; 
+                font-weight: 700;
+                font-size: 26px
+                line-height: 1,17;
+                letter-spacing: 3%;
+                color: var(--main-color);
+                text-decoration: none;
+                }
 
 .web-logo {color: var(--active-color);
-            }
+          }
 
-.logo-link {text-decoration: none;}
-
-.menu {font-weight: 500;
-    font-size: 14px;
-    line-height: 1,17;
-    letter-spacing: 2%; }
+.menu .menu-link {font-weight: 500;
+                font-size: 14px;
+                line-height: 1,17;
+                letter-spacing: 2%; 
+                color: var(--main-color);
+                }
 
 .menu-link {text-decoration: none;}
+
 .menu-link:hover,
-.menu-link:focus {color: var(--active-color);}
-    
+.menu-link:focus {color: var(--active-color);
+                 }
 
-/* jaki tu kolor? */
-.menu-link:active {color: var(--active-color);}
-
+.menu-link:active {color: var(--active-color);
+                  }
 
 ul {list-style-type: none;}
 
@@ -41,11 +46,11 @@ text-align: right;
 letter-spacing: 2%;}
 
 .contact-link {text-decoration: none;
-color: #757575;}
+color: var(--beige);}
+
 .contact-link:hover,
 .contact-link:focus {color: var(--active-color);}
 
-    /* jaki tu kolor? */
 .contact-link:active {color: var(--active-color);}
 
 .text {background-color: #2F303A;
@@ -53,13 +58,13 @@ text-align: center;
 letter-spacing: 6%;}
 
 .text-title {font-weight: 900;
-color: #FFFFFF;
+color: var(--white);
 font-size: 44px;
 line-height: 1,36;
 }
 
 .button-active {font-weight: 700;
-color: #FFFFFF;
+color: var(--white);
 font-size: 16px;
 line-height: 1,88;
 background-color:var(--active-color);
@@ -72,7 +77,7 @@ background-color:var(--active-color);
 }
 
 .asset-description {
-    color: #757575;
+    color: var(--beige);
     font-size: 14px;
     line-height: 1,71;
     letter-spacing: 3%;
@@ -88,7 +93,6 @@ background-color:var(--active-color);
 
 .team {background-color: #F5F4FA;}
 
-/* czy do wszystkich h2 ustawić poniższe ustawienia? */
 .team-title {font-weight: 700;
 font-size: 36px;
 line-height: 1,17;
@@ -98,7 +102,7 @@ letter-spacing: 3%;
 
 .job-title {font-size: 16px;
 line-height: 1,17;
-color: #757575;
+color: var(--beige);
 letter-spacing: 3%;
  }
 
@@ -111,14 +115,14 @@ letter-spacing: 3%;
 
 .team-list > li {
     text-align: center;
-background-color: #FFFFFF;}
+background-color: var(--white);}
 
 .down {background-color: #2F303A;}
 
 .place {
 font-size: 14px;
 line-height: 1,71;
-color: #FFFFFF; 
+color: var(--white); 
 font-style: normal;
 letter-spacing: 3%;
 }
@@ -137,7 +141,7 @@ letter-spacing: 3%;
 
 .portfolio {text-align: center;}
 
-.button-filter {font-family: Roboto, sans-serif;
+.button-filter {font-family: "Roboto", sans-serif;
     font-weight: 500;
     font-size: 16px;
     line-height: 1,63;
@@ -146,10 +150,9 @@ letter-spacing: 3%;
 }
 
 .button-filter:hover {color: var(--active-color);}
-.button-filter:focus {color: #FFFFFF;}
+.button-filter:focus {color: var(--white);}
 
 .button-filter:active {color: var(--active-color);}
-
 
 .title {font-weight: 700;
 font-size: 18px;
@@ -160,5 +163,5 @@ letter-spacing: 6%;
 
 .type {font-size: 16px;
 line-height: 1,88;
-color: #757575;
+color: var(--beige);
 letter-spacing: 3%;}
