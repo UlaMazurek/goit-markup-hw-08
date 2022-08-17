@@ -1,10 +1,12 @@
-body {
+body {font-family: "Roboto", "Raleway", sans-serif;
 color: #212121;
-background-color: #FFFFFF; }
+background-color: var(--white); }
 
-:root {--active-color: #2196F3;}
+:root {--active-color: #2196F3;
+--white: #FFFFFF;
+--beige: #757575;}
 
-.logo {font-family: Raleway;
+.logo {font-family: "Raleway"; 
     font-weight: 700;
     font-size: 26px
     line-height: 1,17;
