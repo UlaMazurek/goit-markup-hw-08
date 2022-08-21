@@ -1,3 +1,9 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 body {font-family: "Roboto", "Raleway", sans-serif;
 color: var(--main-color);
 background-color: var(--white);
@@ -21,10 +27,10 @@ justify-content: space-between;
 nav {display: flex;}
 
 .menu ul {display: flex;
-    margin-top: 32px;
-    margin-bottom: 32px;
+    align-items: center;
 }
 
+/* czy musi tu być width i margin-right? Co z margin-left?*/
 .logo .logo-link {font-family: "Raleway", sans-serif; 
 font-weight: 700;
 font-size: 26px;
@@ -34,13 +40,11 @@ color: var(--main-color);
 text-decoration: none;
 width: 145px;
 margin-right: 93px;
+align-items: center;
 }
 
 .web-logo {color: var(--active-color);
 }
-
-.logo {margin-top: 24px;
-    margin-bottom: 25px;}
 
 .menu-link-current {color: var(--active-color);
 text-decoration: none;
@@ -83,10 +87,10 @@ line-height: 1.17;
 text-align: right;
 letter-spacing: 0.02em;
 text-decoration: none;
-margin-top: 32px;
-margin-bottom: 32px;
+align-items: center;
 }
 
+/* czy przy nr telefonu trzeba dać margin-right? */
 .contact p:not(:last-child) {margin-right: 50px;}
 
 .contact-link {color: var(--beige);}
@@ -96,37 +100,62 @@ margin-bottom: 32px;
 
 .contact-link:active {color: var(--active-color);}
 
+
+/* czy tutaj ma tak być z margin: 0 auto; ?*/
 section .container {width: 1200px;
-margin: 0 auto;
 }
 
+
+/* jaki display tutaj? 
+dodano taki: 
+display: flex;
+flex-direction: column;*/
 .text {background-color: #2F303A;
 text-align: center;
 letter-spacing: 0.06em;
+
 }
 
 .section {padding-top: 94px;
-    padding-bottom: 94px;
+padding-bottom: 94px;
 }
 
+
+/* dodane width
+usunięte height: 120px;
+*/
 .text-title {font-weight: 900;
 color: var(--white);
 font-size: 44px;
 line-height: 1.36;
-padding-top: 195px;
+padding-top: 114px;
+justify-content: center;
+margin-left: auto;
+margin-right: auto;
 margin-bottom: 30px;
+width: 696px;
+display: block;
 }
 
-.button-active {font-weight: 700;
+/* margin-bottom: 192px; 
+*/
+.button-active {font-family: "Roboto", sans-serif;
+font-weight: 700;
 color: var(--white);
 font-size: 16px;
 line-height: 1.88;
+align-items: center;
 background-color:var(--active-color);
 padding: 10px 41px 10px 42px;
 width: 200px;
+height: 50px;
 border-radius: 4px;
 border-style: hidden;
-margin-bottom: 192px;
+margin-left: auto;
+margin-right: auto;
+margin-bottom: 200px;
+cursor: pointer;
+display: block;
 }
 
 .asset-list {display: flex;
