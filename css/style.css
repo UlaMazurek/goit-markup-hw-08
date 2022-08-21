@@ -228,7 +228,7 @@ text-align: center;
 img {
 display: block;
 max-width: 100%;
-height: 260;
+padding: 0;
 }
 
 .job-title {font-size: 16px;
@@ -263,9 +263,11 @@ justify-content: center;
 }
 
 footer .container {flex-direction: column;
-display: block;}
+align-items: baseline;}
 
-.down {background-color: #2F303A;}
+footer {background-color: #2F303A;
+padding-top: 60px;
+padding-bottom: 60px;}
 
 .logo-down .logo-down-link {font-family: "Raleway", sans-serif; 
 font-weight: 700;
@@ -276,17 +278,20 @@ color: var(--white);
 text-decoration: none;
 }
 
-.logo-down {padding-top: 60px;
+.logo-down {
 padding-left: 215px;
 margin-bottom: 20px;}
+
+footer .contacts {flex-direction: column;
+}
+
+footer .contact>li:not(:last-child) {margin-bottom: 9px;}
     
 .place {font-size: 14px;
 line-height: 1.71;
 color: var(--white); 
 font-style: normal;
 letter-spacing: 0.03em;
-padding-left: 215px;
-margin-bottom: 9px;
 }
 
 .contacts {padding-left: 215px;}
@@ -297,10 +302,6 @@ font-size: 14px;
 line-height: 1.71; 
 letter-spacing: 0.03em;
 }
-
-.contacts .link:not(:last-child) {margin-bottom: 9px;}
-
-.contacts .link:last-child {margin-bottom: 60px;}
 
 .contacts .link:hover,
 .contacts .link:focus {color: var(--active-color);}
