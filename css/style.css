@@ -9,6 +9,11 @@ background-color: var(--white);
 --main-color: #212121;
 }
 
+.container {width: 1200px;
+margin: 0 auto;}
+
+
+
 .logo .logo-link {font-family: "Raleway", sans-serif; 
 font-weight: 700;
 font-size: 26px;
