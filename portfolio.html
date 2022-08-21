@@ -13,8 +13,8 @@
     <link href="./css/style.css" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
     <header class="top">
+    <div class="container">
         <h3 class="logo"><a class="logo-link" href="./index.html"><span class="web-logo">Web</span>Studio</a></h3>
         <nav class="menu">
             <ul>
@@ -27,12 +27,14 @@
             <p><a class="contact-link" href="mailto:info@devstudio.com">info@devstudio.com</a></p>
             <p><a class="contact-link" href="tel:+48111111111">+48 111 111 111</a></p>
         </div>
+    </div>
     </header>
     </div>
 
     <main>
-        <div class="container">
-        <section class="portfolio">
+    <section class="portfolio">
+    <!-- czy ten div container ma być w tym miejscu? -->
+    <div class="container">
             <div class="filters">
             <ul class="filters-menu">
                 <li><button type="button" class="button-filter">Wszystkie</button></li>
@@ -92,15 +94,15 @@
                 </li>
             </ul>
         </div>
-        </section>
+    </section>
     </div>
     </main>
 
-    <div class="container">
-    <footer class="down">
+    <footer>
+        <div class="container">
         <h3 class="logo-down"><a class="logo-down-link" href="./index.html"><span class="web-logo">Web</span>Studio</a></h3>
-        <address class="place">m. Warszawa, Aleje Jerozolimskie 21</address>
         <ul class="contacts">
+            <li><address class="place">m. Warszawa, Aleje Jerozolimskie 21</address></li>
             <li><a class="link" href="mailto:info@example.com">info@example.com</a></li>
             <li><a class="link" href="tel:+48111111111">+48 111 111 111</a></li>
         </ul>
