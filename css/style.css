@@ -34,7 +34,6 @@ color: var(--main-color);
 text-decoration: none;
 width: 145px;
 margin-right: 93px;
-
 }
 
 .web-logo {color: var(--active-color);
@@ -114,7 +113,7 @@ letter-spacing: 0.06em;
 color: var(--white);
 font-size: 44px;
 line-height: 1.36;
-margin-top: 208px;
+padding-top: 195px;
 margin-bottom: 30px;
 }
 
@@ -157,7 +156,7 @@ margin-left: 215px;
 margin-right: 215px;
 }
 
-.scope .section {padding-top: 0px;}
+.no-padding {padding-top: 0px;}
 
 .scope-title {font-weight: 700;
 font-size: 36px;
@@ -213,6 +212,9 @@ justify-content: center;
 .team-list img {margin-bottom: 30px;
 }
 
+footer .container {flex-direction: column;
+display: block;}
+
 .down {background-color: #2F303A;}
 
 .logo-down .logo-down-link {font-family: "Raleway", sans-serif; 
@@ -224,14 +226,20 @@ color: var(--white);
 text-decoration: none;
 }
 
-.logo-down {margin-top: 60px 1240px 20px 215px;}
+.logo-down {padding-top: 60px;
+padding-left: 215px;
+margin-bottom: 20px;}
     
 .place {font-size: 14px;
 line-height: 1.71;
 color: var(--white); 
 font-style: normal;
 letter-spacing: 0.03em;
+padding-left: 215px;
+margin-bottom: 9px;
 }
+
+.contacts {padding-left: 215px;}
 
 .contacts .link {text-decoration: none;
 color: #FFFFFF99;
@@ -239,6 +247,10 @@ font-size: 14px;
 line-height: 1.71; 
 letter-spacing: 0.03em;
 }
+
+.contacts .link:not(:last-child) {margin-bottom: 9px;}
+
+.contacts .link:last-child {margin-bottom: 60px;}
 
 .contacts .link:hover,
 .contacts .link:focus {color: var(--active-color);}
