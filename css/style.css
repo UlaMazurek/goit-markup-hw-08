@@ -106,16 +106,15 @@ text-align: center;
 letter-spacing: 0.06em;
 }
 
-.section {padding: 94px 0;
+.section {padding-top: 94px;
+    padding-bottom: 94px;
 }
-
-section {display: block;}
 
 .text-title {font-weight: 900;
 color: var(--white);
 font-size: 44px;
 line-height: 1.36;
-margin-top: 195px;
+margin-top: 208px;
 margin-bottom: 30px;
 }
 
@@ -125,7 +124,10 @@ font-size: 16px;
 line-height: 1.88;
 background-color:var(--active-color);
 padding: 10px 41px 10px 42px;
-margin-bottom: 205px;
+width: 200px;
+border-radius: 4px;
+border-style: hidden;
+margin-bottom: 192px;
 }
 
 .asset-list {display: flex;
@@ -155,6 +157,8 @@ margin-left: 215px;
 margin-right: 215px;
 }
 
+.scope .section {padding-top: 0px;}
+
 .scope-title {font-weight: 700;
 font-size: 36px;
 line-height: 1.17;
@@ -183,13 +187,15 @@ margin-bottom: 50px;
 line-height: 1.17;
 color: var(--beige);
 letter-spacing: 0.03em;
+margin-bottom: 30px;
 }
 
-.name {font-weight: 500;  member-title
+.name {font-weight: 500;
 font-size: 16px;
 line-height: 1.17;
 color: var(--main-color);
 letter-spacing: 0.03em;
+margin-bottom: 10px;
 }
 
 .team-list > li {
