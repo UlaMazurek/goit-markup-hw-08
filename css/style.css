@@ -27,7 +27,7 @@ justify-content: space-between;
 nav {display: flex;}
 
 .menu ul {display: flex;
-    align-items: center;
+align-items: center;
 }
 
 /* czy musi tu być width i margin-right? Co z margin-left?*/
@@ -310,12 +310,22 @@ letter-spacing: 0.03em;
 
 .portfolio {text-align: center;}
 
+/* czy potrzebny tu justify content? */
+.filters .filters-menu {display: flex;
+flex-direction: row;
+justify-content: center;
+}
+
+.filters-menu > li:not(:last-child) {margin-right: 8px;}
+
 .button-filter {font-family: "Roboto", sans-serif;
 font-weight: 500;
 font-size: 16px;
 line-height: 1.63;
 letter-spacing: 0.03em;
 cursor: pointer;
+border-radius: 4px;
+border-style: hidden;
 }
 
 .button-filter:hover {color: var(--active-color);}
