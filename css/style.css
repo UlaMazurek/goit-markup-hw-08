@@ -212,9 +212,6 @@ text-align: center;
 width: 1170;
 }
 
-.team .container {margin-right: 215px;
-margin-left: 215px;}
-
 /*display: flex; ??*/
 
 .team-title {font-weight: 700;
@@ -231,7 +228,7 @@ text-align: center;
 img {
 display: block;
 max-width: 100%;
-height: auto;
+height: 260;
 }
 
 .job-title {font-size: 16px;
@@ -251,7 +248,8 @@ margin-bottom: 10px;
 
 .team-list > li {
 background-color: var(--white);
-
+width: 270px;
+height: 368px;
 }
 
 .team-list > li:not(:last-child) {margin-right: 30px;}
