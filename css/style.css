@@ -100,27 +100,22 @@ align-items: center;
 
 .contact-link:active {color: var(--active-color);}
 
-
-/* czy tutaj ma tak być z margin: 0 auto; ?*/
 section .container {width: 1200px;
-  margin: 0 auto;
+margin: 0 auto;
 }
 
-
 /* jaki display tutaj? 
-dodano taki: 
+dodano wcześniej taki: 
 display: flex;
 flex-direction: column;*/
 .text {background-color: #2F303A;
 text-align: center;
 letter-spacing: 0.06em;
-
 }
 
 .section {padding-top: 94px;
 padding-bottom: 94px;
 }
-
 
 /* dodane width
 usunięte height: 120px;
@@ -138,8 +133,6 @@ width: 696px;
 display: block;
 }
 
-/* margin-bottom: 192px; 
-*/
 .button-active {font-family: "Roboto", sans-serif;
 font-weight: 700;
 color: var(--white);
@@ -159,6 +152,10 @@ cursor: pointer;
 display: block;
 }
 
+/* margin-left: auto;
+margin-right: auto;
+
+DLACZEGO POKAZUJE WIDTH 964,800 A NIE 1170???*/
 .asset-list {display: flex;
 flex-wrap: wrap;
 column-gap: 30px;
@@ -166,12 +163,14 @@ padding: 0;
 width: 1170px;
 flex-direction: row;
 justify-content: center;
-margin-left: 215px;
-margin-right: auto;
+align-content: center;
 }
 
-.asset-list > li {width: 270px;
-}
+.asset-element {flex-basis: calc((100% - 90px) / 4);}
+
+/*  czy to jest tutaj potrzebne?
+ .asset-list > li {width: 270px;) */
+
 
 .asset-title {font-weight: 700;
 font-size: 14px;
@@ -189,8 +188,8 @@ letter-spacing: 0.03em;
 
 .scope {text-align: center;
 width: 1170px;
-margin-left: 215px;
-margin-right: 215px;
+margin-left: auto;
+margin-right: auto;
 }
 
 .no-padding {padding-top: 0px;}
@@ -264,6 +263,15 @@ justify-content: center;
 .team-list img {margin-bottom: 30px;
 }
 
+/* co z box-shadow? czy już to musimy robić? */
+.team-card {padding: 0;
+border-top-left-radius: 0px;
+border-top-right-radius: 0px;
+border-bottom-left-radius: 4px;
+border-bottom-right-radius: 4px;
+width: 270px;
+height: 368px;}
+
 footer .container {flex-direction: column;
 align-items: baseline;}
 
@@ -334,8 +342,6 @@ width: 121px;
 height: 38px;
 }
 
-
-/* jaki tutaj ma być kolor po najechaniu myszką */
 .button-filter:hover {color: var(--white);
 background-color: var(--active-color);}
 .button-filter:focus {color: var(--white);}
