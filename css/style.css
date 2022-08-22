@@ -336,7 +336,8 @@ height: 38px;
 
 
 /* jaki tutaj ma być kolor po najechaniu myszką */
-.button-filter:hover {color: var(--active-color);}
+.button-filter:hover {color: var(--white);
+background-color: var(--active-color);}
 .button-filter:focus {color: var(--white);}
 
 .button-filter:active {color: var(--white);
@@ -365,8 +366,8 @@ padding-right: 24px;
 margin-right: auto;}
 
 .portfolio-list {display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
+flex-wrap: wrap;
+gap: 30px;
 padding: 0;
 align-content: center;}
 
