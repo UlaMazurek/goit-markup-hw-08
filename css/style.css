@@ -26,18 +26,18 @@ padding-right: 15px;
 margin: 0px auto;
 align-items: center;
 justify-content: space-between;
-flex-wrap: wrap;}
-
+flex-wrap: wrap;
+}
 
 h1, h2, h3, h4, p, ul {
 padding: 0; 
-margin: 0;}
+margin: 0;
+}
+
+ul {list-style-type: none;}
 
 .top {border-bottom: 1px solid #ECECEC;}
 
-/* width: 1200px; 
-margin: 0 auto;
-display: flex;*/
 header .container {
 align-items: center; 
 justify-content: space-between;
@@ -45,13 +45,13 @@ height: 80px;
 }
 
 nav {display: flex;
-align-items: center;}
+align-items: center;
+}
 
 .menu ul {display: flex;
 align-items: center;
 }
 
-/* czy musi tu być width i margin-right? Co z margin-left?*/
 .logo .logo-link {font-family: "Raleway", sans-serif; 
 font-weight: 700;
 font-size: 26px;
@@ -59,7 +59,6 @@ line-height: 1.17;
 letter-spacing: 0.03em;
 color: var(--main-color);
 text-decoration: none;
-width: 145px;
 margin-right: 93px;
 align-items: center;
 padding-top: 24px;
@@ -96,9 +95,6 @@ color: var(--main-color);
 
 .menu-link-current:active {color: var(--active-color);}
 
-
-ul {list-style-type: none;}
-
 .menu .menu-list > li:not(:last-child)
 {margin-right: 46px;}
 
@@ -113,7 +109,6 @@ text-decoration: none;
 align-items: center;
 }
 
-/* czy przy nr telefonu trzeba dać margin-right? */
 .contact p:not(:last-child) {margin-right: 50px;}
 
 .contact-link {color: var(--beige);}
@@ -132,7 +127,8 @@ padding-bottom: 94px;
 }
 
 .no-padding {padding-top: 0px;
-padding-bottom: 0px;}
+padding-bottom: 0px;
+}
 
 .text .container {flex-direction: column;
 padding-top: 200px;
@@ -162,8 +158,6 @@ align-items: center;
 text-align: center;
 background-color:var(--active-color);
 padding: 10px 41px 10px 42px;
-width: 200px;
-height: 50px;
 border-radius: 4px;
 border-style: hidden;
 margin-left: auto;
@@ -213,7 +207,6 @@ font-size: 36px;
 line-height: 1.17;
 letter-spacing: 0.03em;
 margin: 0 auto;
-
 text-align: center;
 justify-content: center;
 }
@@ -223,13 +216,12 @@ flex-wrap: wrap;
 justify-content: center;
 margin-top: 50px;
 gap: 30px;
-padding: 0;}
+padding: 0;
+}
 
 .team {background-color: #F5F4FA;
 text-align: center;
 }
-
-/*display: flex; ??*/
 
 .team-title {font-weight: 700;
 font-size: 36px;
@@ -242,8 +234,7 @@ margin-bottom: 50px;
 text-align: center;
 }
 
-img {
-display: block;
+img {display: block;
 max-width: 100%;
 padding: 0;
 margin: 0;
@@ -264,8 +255,7 @@ letter-spacing: 0.03em;
 margin-bottom: 10px;
 }
 
-.team-list > li {
-background-color: var(--white);
+.team-list > li {background-color: var(--white);
 width: 270px;
 height: 368px;
 }
@@ -277,8 +267,7 @@ flex-wrap: wrap;
 justify-content: center;
 }
 
-.team-list img {margin-bottom: 30px;
-}
+.team-list img {margin-bottom: 30px;}
 
 .team-card {padding: 0;
 border-top-left-radius: 0px;
@@ -290,11 +279,13 @@ height: 368px;
 }
 
 footer .container {flex-direction: column;
-align-items: baseline;}
+align-items: baseline;
+}
 
 footer {background-color: #2F303A;
 padding-top: 60px;
-padding-bottom: 60px;}
+padding-bottom: 60px;
+}
 
 .logo-down .logo-down-link {font-family: "Raleway", sans-serif; 
 font-weight: 700;
@@ -305,11 +296,9 @@ color: var(--white);
 text-decoration: none;
 }
 
-.logo-down {
-margin-bottom: 20px;}
+.logo-down {margin-bottom: 20px;}
 
-footer .contacts {flex-direction: column;
-}
+footer .contacts {flex-direction: column;}
 
 footer .contact>li:not(:last-child) {margin-bottom: 9px;}
     
@@ -333,11 +322,15 @@ letter-spacing: 0.03em;
 .contacts .link:active {color:var(--active-color);}
 
 .portfolio {text-align: center;
-display: flex;}
+display: flex;
+}
 
-/* czy potrzebny tu justify content? */
-.filters .filters-menu {display: flex;
-flex-direction: row;
+.filters {display: flex;
+justify-content: center;
+width: 100%;
+}
+
+.filters .filters-menu {display: inline-flex;
 justify-content: center;
 margin-bottom: 34px;
 }
@@ -352,8 +345,7 @@ letter-spacing: 0.03em;
 cursor: pointer;
 border-radius: 4px;
 border-style: hidden;
-width: 121px;
-height: 38px;
+padding: 6px 24px;
 }
 
 .button-filter:hover {color: var(--white);
@@ -383,22 +375,19 @@ padding-right: 24px;
 }
 
 .list {margin-left: auto;
-margin-right: auto;}
+margin-right: auto;
+}
 
 .portfolio-list {display: flex;
 flex-wrap: wrap;
 gap: 30px;
 padding: 0;
-align-content: center;}
+align-content: center;
+}
 
-
-/* czy tutaj musi być padding 0? 
-jak zrobić żeby zdjęcia wypełniały całość?*/
-.card {
-  /* flex-basis: calc((100% - 60px) / 3); 
-  przy tej komendzie zdjęcia nie wypełniają całości - prawy margines*/
-padding: 0;
+.card {padding: 0;
 border: 1px solid #EEEEEE;
 text-align: left;
 width: 370px;
-height: 404px;}
+height: 404px;
+}
