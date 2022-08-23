@@ -7,6 +7,9 @@
 body {font-family: "Roboto", "Raleway", sans-serif;
 color: var(--main-color);
 background-color: var(--white);
+letter-spacing: 0.03em;
+font-size: 14px;
+line-height: 1.71;
 }
 
 :root {--active-color: #2196F3;
@@ -15,19 +18,35 @@ background-color: var(--white);
 --main-color: #212121;
 }
 
-h1 {margin: 0;}
+.container {display: flex;
+flex-wrap: wrap;
+width: 1200px;
+padding-left: 15px;
+padding-right: 15px;
+margin: 0px auto;
+align-items: center;
+justify-content: space-between;
+flex-wrap: wrap;}
+
+
+h1, h2, h3, h4, p, ul {
+display: flex; 
+padding: 0; 
+margin: 0;}
 
 .top {border-bottom: 1px solid #ECECEC;}
 
-header .container {width: 1200px;
+/* width: 1200px; 
 margin: 0 auto;
-display: flex;
+display: flex;*/
+header .container {
 align-items: center; 
 justify-content: space-between;
 height: 80px;
 }
 
-nav {display: flex;}
+nav {display: flex;
+align-items: center;}
 
 .menu ul {display: flex;
 align-items: center;
@@ -105,9 +124,11 @@ align-items: center;
 
 .contact-link:active {color: var(--active-color);}
 
+/* 
 section .container {width: 1200px;
 margin: 0 auto;
 }
+ */
 
 /* jaki display tutaj? 
 dodano wcześniej taki: 
@@ -133,11 +154,12 @@ padding-bottom: 200px;
 color: var(--white);
 font-size: 44px;
 line-height: 1.36;
-justify-content: center;
+text-align: center;
 margin-left: auto;
 margin-right: auto;
 margin-bottom: 30px;
 width: 696px;
+height: 120px;
 }
 
 .button-active {font-family: "Roboto", sans-serif;
@@ -154,9 +176,8 @@ border-radius: 4px;
 border-style: hidden;
 margin-left: auto;
 margin-right: auto;
-
 cursor: pointer;
-display: block;
+
 }
 
 /* margin-left: auto;
@@ -211,6 +232,8 @@ font-size: 36px;
 line-height: 1.17;
 letter-spacing: 0.03em;
 margin-bottom: 50px;
+text-align: center;
+justify-content: center;
 }
 
 .scope-list {display: flex;
@@ -282,7 +305,10 @@ border-top-right-radius: 0px;
 border-bottom-left-radius: 4px;
 border-bottom-right-radius: 4px;
 width: 270px;
-height: 368px;}
+height: 368px;
+}
+
+
 
 footer .container {flex-direction: column;
 align-items: baseline;}
