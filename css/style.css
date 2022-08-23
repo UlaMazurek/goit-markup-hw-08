@@ -124,36 +124,27 @@ align-items: center;
 
 .contact-link:active {color: var(--active-color);}
 
-/* 
-section .container {width: 1200px;
-margin: 0 auto;
-}
- */
-
-/* jaki display tutaj? 
-dodano wcześniej taki: 
-display: flex;
-flex-direction: column;*/
 .text {background-color: #2F303A;
 text-align: center;
-letter-spacing: 0.06em;
 }
 
 .section {padding-top: 94px;
 padding-bottom: 94px;
 }
 
+.no-padding {padding-top: 0px;
+padding-bottom: 0px;}
+
 .text .container {flex-direction: column;
 padding-top: 200px;
 padding-bottom: 200px;
 }
 
-/* dodane height: 120px;
-*/
 .text-title {font-weight: 900;
 color: var(--white);
 font-size: 44px;
 line-height: 1.36;
+letter-spacing: 0.06em;
 text-align: center;
 margin-left: auto;
 margin-right: auto;
@@ -167,7 +158,9 @@ font-weight: 700;
 color: var(--white);
 font-size: 16px;
 line-height: 1.88;
+letter-spacing: 0.06em;
 align-items: center;
+text-align: center;
 background-color:var(--active-color);
 padding: 10px 41px 10px 42px;
 width: 200px;
@@ -193,8 +186,7 @@ max-height: 101px;
 flex-direction: row;
 justify-content: center;
 align-content: center;
-margin-left: auto;
-margin-right: auto;
+margin: 0 auto;
 }
 
 .asset-element {flex-basis: calc((100% - 90px) / 4);
@@ -220,7 +212,6 @@ width: 270px;
 }       
 
 .scope {text-align: center;
-width: 1170px;
 margin-left: auto;
 margin-right: auto;
 }
@@ -231,7 +222,8 @@ margin-right: auto;
 font-size: 36px;
 line-height: 1.17;
 letter-spacing: 0.03em;
-margin-bottom: 50px;
+margin: 0 auto;
+
 text-align: center;
 justify-content: center;
 }
@@ -239,12 +231,12 @@ justify-content: center;
 .scope-list {display: flex;
 flex-wrap: wrap;
 justify-content: center;
+margin-top: 50px;
 gap: 30px;
 padding: 0;}
 
 .team {background-color: #F5F4FA;
 text-align: center;
-width: 1170;
 }
 
 /*display: flex; ??*/
@@ -253,7 +245,7 @@ width: 1170;
 font-size: 36px;
 line-height: 1.17;
 letter-spacing: 0.03em;
-justify content: center;
+justify-content: center;
 margin-left: auto;
 margin-right: auto;
 margin-bottom: 50px;
@@ -291,7 +283,7 @@ height: 368px;
 .team-list > li:not(:last-child) {margin-right: 30px;}
 
 .team-list {display: flex;
-flex-direction: wrap;
+flex-wrap: wrap;
 justify-content: center;
 }
 
