@@ -30,7 +30,6 @@ flex-wrap: wrap;}
 
 
 h1, h2, h3, h4, p, ul {
-display: flex; 
 padding: 0; 
 margin: 0;}
 
@@ -170,13 +169,8 @@ border-style: hidden;
 margin-left: auto;
 margin-right: auto;
 cursor: pointer;
-
 }
 
-/* margin-left: auto;
-margin-right: auto;
-
-DLACZEGO POKAZUJE WIDTH 964,800 A NIE 1170???*/
 .asset-list {display: flex;
 flex-wrap: wrap;
 column-gap: 30px;
@@ -191,10 +185,6 @@ margin: 0 auto;
 
 .asset-element {flex-basis: calc((100% - 90px) / 4);
 }
-
-/*  czy to jest tutaj potrzebne?
- .asset-list > li {width: 270px;) */
-
 
 .asset-title {font-weight: 700;
 font-size: 14px;
@@ -290,7 +280,6 @@ justify-content: center;
 .team-list img {margin-bottom: 30px;
 }
 
-/* co z box-shadow? czy już to musimy robić? */
 .team-card {padding: 0;
 border-top-left-radius: 0px;
 border-top-right-radius: 0px;
@@ -299,8 +288,6 @@ border-bottom-right-radius: 4px;
 width: 270px;
 height: 368px;
 }
-
-
 
 footer .container {flex-direction: column;
 align-items: baseline;}
@@ -319,7 +306,6 @@ text-decoration: none;
 }
 
 .logo-down {
-padding-left: 215px;
 margin-bottom: 20px;}
 
 footer .contacts {flex-direction: column;
@@ -333,8 +319,6 @@ color: var(--white);
 font-style: normal;
 letter-spacing: 0.03em;
 }
-
-.contacts {padding-left: 215px;}
 
 .contacts .link {text-decoration: none;
 color: #FFFFFF99;
