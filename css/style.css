@@ -364,7 +364,11 @@ footer {
 background-color: #2F303A;
 padding-top: 60px;
 padding-bottom: 60px;
+/* display: flex;
+flex-direction: row;
+align-items: center; */
 }
+
 
 .logo-down .logo-down-link {
 font-family: "Raleway", sans-serif; 
@@ -412,6 +416,47 @@ color: var(--active-color);
 .contacts .link:active {
 color:var(--active-color);
 }
+
+.join {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    color: var(--white);
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    }
+
+.container-footer {
+    margin-left: 70px;
+}
+
+.footer-social-list {
+    display: flex;}
+
+.footer-social-list > li:not(:last-child) {
+    margin-right: 10px;
+}
+
+.social-icon {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    fill: var(--white);
+    background-color: rgba(255, 255, 255, 0.1);
+    cursor: pointer;
+    display: block;
+}
+
+.social-icon:hover,
+.social-icon:focus {
+    color: var(--active-color);
+                    }
+
+.social-icon:active {
+    color: var(--active-color);
+                    }
+
 
 .portfolio {
 text-align: center;
@@ -500,3 +545,6 @@ text-align: left;
 width: 370px;
 height: 404px;
 }
+
+
+
