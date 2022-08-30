@@ -153,6 +153,14 @@ color: var(--active-color);
 color: var(--active-color);
 }
 
+/* czy to tutaj potrzbne jak dajemy ikony przez svg? */
+.contact-link::before {
+    content: "";
+    background-size: contain;
+    margin-right: 10px;
+
+}
+
 .text {
 background-color: #2F303A;
 text-align: center;
