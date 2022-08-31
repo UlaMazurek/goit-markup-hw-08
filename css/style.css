@@ -389,9 +389,27 @@ margin-bottom: 10px;
 
 .clients-title {
     font-weight: 700px;
-    font-weight: 32px;
+    font-size: 36px;
     line-height: 1.17;
     letter-spacing: 0.03em;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    }
+
+.client-list {
+    display: flex;
+    flex-direction: row;
+	gap: 30px;
+    }
+
+.client-logo {
+    width: 170px;
+	height: 92px;
+	border: 1px solid #afb1b8;
+	border-radius: 4px;
+	fill: #afb1b8;
     }
 
 footer .container {
