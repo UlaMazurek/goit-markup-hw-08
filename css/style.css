@@ -379,6 +379,7 @@ margin-bottom: 10px;
     border-radius: 50%;
     background-repeat: no-repeat;
     fill: #AFB1B8;
+    cursor: pointer;
     }
 
 .member-social-icon:hover,
