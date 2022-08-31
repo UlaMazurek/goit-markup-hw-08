@@ -412,6 +412,14 @@ margin-bottom: 10px;
 	fill: #afb1b8;
     }
 
+.one {padding: 
+    17.71px 32px 14.25px 32px;
+    }
+
+.two {
+    padding: 16px 32px;
+    }
+
 footer .container {
     flex-direction: column;
     align-items: baseline;
