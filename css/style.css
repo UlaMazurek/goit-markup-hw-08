@@ -410,6 +410,7 @@ margin-bottom: 10px;
 	border: 1px solid #afb1b8;
 	border-radius: 4px;
 	fill: #afb1b8;
+    cursor: pointer;
     }
 
 .one {padding: 
@@ -418,6 +419,11 @@ margin-bottom: 10px;
 
 .two {
     padding: 16px 32px;
+    }
+
+.client-logo:hover,
+.client-logo:focus {
+    fill: var(--active-color);
     }
 
 footer .container {
