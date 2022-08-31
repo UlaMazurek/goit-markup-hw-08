@@ -134,6 +134,7 @@ text-align: right;
 letter-spacing: 0.02em;
 text-decoration: none;
 align-items: center;
+display: flex;
 }
 
 .contact p:not(:last-child) {
@@ -153,17 +154,17 @@ color: var(--active-color);
 color: var(--active-color);
 }
 
-/* czy to tutaj potrzbne jak dajemy ikony przez svg? 
-.contact-link::before {
-    content: "";
-    background-size: contain;
-    margin-right: 10px;
-}
-*/
-
 .contact-icon {
     width: 16px;
 	height: 16px;
+    margin-right: 10px;
+    fill: currentColor;
+}
+.contact-icon .env {
+    width: 16px;
+	height: 12px;
+    margin-right: 10px;
+    fill: currentColor;
 }
 
 .text {
