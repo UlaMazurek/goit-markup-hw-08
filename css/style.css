@@ -399,7 +399,7 @@ img {
 /* Sekcja 4 - Clients */
 
 .clients-title {
-    font-weight: 700px;
+    font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
     letter-spacing: 0.03em;
@@ -476,7 +476,6 @@ footer {
 
 footer .contacts {
     flex-direction: column;
-    /* display: flex; */
     }
 
 footer .contacts>li:not(:last-child) {
@@ -530,7 +529,6 @@ footer .contacts>li:not(:last-child) {
     margin-right: 10px;
 }
 
-/* jak zrobić, żeby kursor był przezroczysty? */
 .social-icon {
     width: 44px;
     height: 44px;
