@@ -563,19 +563,20 @@ footer .container-footer {
     padding: 6px 24px;
     }
 
-.button-filter:hover {
-    color: var(--white);
-    background-color: var(--active-color);
-    }
-
+.button-filter:hover,
 .button-filter:focus {
     color: var(--white);
+    background-color: var(--active-color);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     }
 
 .button-filter:active {
     color: var(--white);
     background-color: var(--active-color);
     }
+
+.button-filter:hover,
+.button-filter:focus {}
 
 .title {
     font-weight: 700;
