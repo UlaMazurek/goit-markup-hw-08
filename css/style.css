@@ -449,6 +449,7 @@ footer {
     display: flex;
     flex-direction: row;
     align-items: baseline;
+    justify-content: flex-start;
     }
 
 .footer-inf {
