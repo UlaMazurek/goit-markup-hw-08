@@ -510,6 +510,7 @@ color:var(--active-color);
     margin-right: 10px;
 }
 
+/* jak zrobić, że kursor był przezroczysty? */
 .social-icon {
     width: 44px;
     height: 44px;
@@ -518,28 +519,24 @@ color:var(--active-color);
     background-color: rgba(255, 255, 255, 0.1);
     cursor: pointer;
     display: block;
-}
+    }
 
 .social-icon:hover,
 .social-icon:focus {
-    color: var(--active-color);
-                    }
-
-.social-icon:active {
-    color: var(--active-color);
-                    }
+    background-color: var(--active-color);
+    }
 
 
 .portfolio {
-text-align: center;
-display: flex;
-}
+    text-align: center;
+    display: flex;
+    }
 
 .filters {
-display: flex;
-justify-content: center;
-width: 100%;
-}
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    }
 
 .filters .filters-menu {
 display: inline-flex;
