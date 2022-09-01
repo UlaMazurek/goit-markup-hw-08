@@ -40,6 +40,8 @@ ul {
     list-style-type: none;
     }
 
+/* Menu */
+
 .top {
     border-bottom: 1px solid #ECECEC;
     }
@@ -160,6 +162,8 @@ nav {
     fill: currentColor;
     }
 
+/* Header */
+
 .text {
     background-color: #2F303A;
     text-align: center;
@@ -222,6 +226,8 @@ nav {
     cursor: pointer;
     }
 
+/* Sekcja 1 - Lorem*/
+
 .asset-list {
     display: flex;
     flex-wrap: wrap;
@@ -262,6 +268,8 @@ nav {
     border-radius: 4px;
     }
 
+/* Sekcja 2 - Img*/
+
 .scope {
     text-align: center;
     margin-left: auto;
@@ -293,6 +301,8 @@ nav {
     padding-left: 0;
     padding-bottom: 94px;
     }
+
+/* Sekcja 3 - Team */
 
 .team {
     background-color: #F5F4FA;
@@ -386,6 +396,8 @@ img {
     background-color: var(--active-color);
     }
 
+/* Sekcja 4 - Clients */
+
 .clients-title {
     font-weight: 700px;
     font-size: 36px;
@@ -426,22 +438,25 @@ img {
     border-color: var(--active-color);
     } 
 
-/* Sekcja footer */
+/* Footer */
 
 footer {
     background-color: #2F303A;
-    display: flex;
-	height: 252px;
+    width: 100%;
     }
 
-footer .container {
-    /* flex-direction: column; */
+.footer-container {
+    display: flex;
+    flex-direction: row;
     align-items: baseline;
+    }
+
+.footer-inf {
+    flex-direction: column;
     padding-top: 60px;
     padding-bottom: 60px;
     margin-right: 70px;
-    /* display: flex; */
-	/* flex-direction: row; */
+    display: flex;
     }
 
 .logo-down .logo-down-link {
@@ -492,10 +507,9 @@ footer .contacts>li:not(:last-child) {
     color:var(--active-color);
     }
 
-footer .container-footer {
+.footer-social {
     width: 206px;
     margin-top: 72px;
-    margin-right: 863px;
     }
 
 .join {
@@ -515,7 +529,7 @@ footer .container-footer {
     margin-right: 10px;
 }
 
-/* jak zrobić, że kursor był przezroczysty? */
+/* jak zrobić, żeby kursor był przezroczysty? */
 .social-icon {
     width: 44px;
     height: 44px;
@@ -530,6 +544,8 @@ footer .container-footer {
 .social-icon:focus {
     background-color: var(--active-color);
     }
+
+/* Portofolio - Filters */
 
 .portfolio {
     text-align: center;
@@ -575,6 +591,8 @@ footer .container-footer {
     color: var(--white);
     background-color: var(--active-color);
     }
+
+/* Portfolio list  */
 
 .title {
     font-weight: 700;
