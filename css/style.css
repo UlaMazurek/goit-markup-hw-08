@@ -380,6 +380,12 @@ img {
     justify-content: center;
     padding-bottom: 30px;
     }
+    
+.social-link:hover svg,
+.social-link:focus svg {
+    fill: var(--white);
+    background-color: var(--active-color);
+    }
 
 .member-social-icon {
     width: 44px;
@@ -388,12 +394,6 @@ img {
     background-repeat: no-repeat;
     fill: #AFB1B8;
     cursor: pointer;
-    }
-
-.member-social-icon:hover,
-.member-social-icon:focus {
-    fill: var(--white);
-    background-color: var(--active-color);
     }
 
 /* Sekcja 4 - Clients */
@@ -415,6 +415,12 @@ img {
 	gap: 30px;
     }
 
+.client-link:hover svg,
+.client-link:focus svg {
+    fill: var(--active-color);
+    border-color: var(--active-color);
+    }
+
 .client-logo {
     width: 170px;
 	height: 92px;
@@ -431,12 +437,6 @@ img {
 .two {
     padding: 16px 32px;
     }
-
-.client-logo:hover,
-.client-logo:focus {
-    fill: var(--active-color);
-    border-color: var(--active-color);
-    } 
 
 /* Footer */
 
@@ -539,10 +539,15 @@ footer .contacts>li:not(:last-child) {
     display: block;
     }
 
-.social-icon:hover,
-.social-icon:focus {
+.footer-social-link:hover svg,
+.footer-social-link:focus svg {
     background-color: var(--active-color);
     }
+
+/* .social-icon:hover,
+.social-icon:focus {
+    background-color: var(--active-color);
+    } */
 
 /* Portofolio - Filters */
 
