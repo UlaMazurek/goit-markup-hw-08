@@ -657,8 +657,6 @@ footer .contacts>li:not(:last-child) {
     border-right: 1px solid #EEEEEE;
     border-bottom: 1px solid #EEEEEE;
     border-top: 0px;
-    position: relative;
-	overflow: hidden;
     }
 
 .list {
@@ -674,7 +672,14 @@ footer .contacts>li:not(:last-child) {
     align-content: center;
     }
 
-    /* właściwość hidden nie działa */
+.card:hover,
+.card:focus {
+    box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
+    0px 4px 4px 0px rgba(0, 0, 0, 0.06),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+    cursor: pointer;
+    }
+    
 .card {
     padding: 0;
     text-align: left;
@@ -689,12 +694,6 @@ footer .contacts>li:not(:last-child) {
     transform: translateY(0);
     }
 
-.card:hover,
-.card:focus {
-    box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
-    0px 4px 4px 0px rgba(0, 0, 0, 0.06),
-    0px 1px 1px 0px rgba(0, 0, 0, 0.12);
-    cursor: pointer;}
 
 .overlay {
     position: absolute;
