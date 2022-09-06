@@ -681,7 +681,6 @@ footer .contacts>li:not(:last-child) {
     padding: 0;
     text-align: left;
     width: 370px;
-    height: 404px;
     }
 
 .card:hover .overlay {
