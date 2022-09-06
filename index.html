@@ -56,9 +56,17 @@
             <div class="container">
             <h1 class="text-title">EFEKTYWNE ROZWIĄZANIA
                 DLA WASZEGO BIZNESU</h1>
-            <button type="button" class="button-active">Zamów usługę</button>
+            <button type="button" class="button-active" data-modal-open>Zamów usługę</button>
             </div>
         </section>
+
+        <div class="backdrop is hidden" data modal>
+            <div class="modal">
+                <button type="button" class="close-btn" data-modal-close>X</button>
+
+            </div>
+
+        </div>
 
         <section class="asset section">
             <div class="container">
@@ -545,6 +553,8 @@
         </div>
     </div>
     </footer>
+
+    <script src="./js/modal.js"></script>
 
 </body>
 </html>

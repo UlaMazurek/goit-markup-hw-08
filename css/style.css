@@ -685,15 +685,17 @@ footer .contacts>li:not(:last-child) {
     text-align: left;
     width: 370px;
     height: 404px;
-    position: relative;
-    overflow: hidden;
-    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 
 .card:hover .overlay {
     transform: translateY(0);
     }
 
+.card-all {
+    position: relative;
+    overflow: hidden;
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
 
 .overlay {
     position: absolute;
