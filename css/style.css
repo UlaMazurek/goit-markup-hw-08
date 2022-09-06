@@ -741,6 +741,22 @@ footer .contacts>li:not(:last-child) {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    animation: animatex100 5000ms linear 1000ms;
+    }
+
+@keyframes animatex100 {
+    0% {
+        transform: translateX(0);
+    } 
+
+    50% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+
     }
 
     /* jaki kursor tutaj? */
@@ -765,3 +781,4 @@ footer .contacts>li:not(:last-child) {
     visibility: hidden;
     pointer-events: none;
     }
+
