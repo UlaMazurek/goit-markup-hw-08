@@ -763,8 +763,8 @@ footer .contacts>li:not(:last-child) {
     height: 100%;
     fill: currentColor;  
     }
-
-/* .is-hidden {
+    
+ .is-hidden {
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
