@@ -321,7 +321,6 @@ nav {
     position: relative;
     }
 
-    /* nie widać drop shadow */
 .label {
     position: absolute;
     text-transform: uppercase;
@@ -727,6 +726,7 @@ footer .contacts>li:not(:last-child) {
     position: fixed;
     top: 0;
     left: 0;
+    z-index: 1;
     }
 
 .modal {
@@ -768,5 +768,4 @@ footer .contacts>li:not(:last-child) {
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
-    } */
-
+    }
