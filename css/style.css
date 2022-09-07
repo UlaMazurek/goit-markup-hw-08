@@ -741,22 +741,7 @@ footer .contacts>li:not(:last-child) {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    /
-    }
-
-/* @keyframes animatex100 {
-    0% {
-        transform: translateX(0);
-    } 
-
-    50% {
-        transform: translateX(-100%);
-    }
-
-    100% {
-        transform: translateX(0);
-    } */
-
+    border-radius: 4px;
     }
 
     /* jaki kursor tutaj? */
