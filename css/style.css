@@ -89,7 +89,6 @@ nav {
     letter-spacing: 0.02em;
     }
 
-    /* czy to podkreślenie ma być cały czas czy tylko po najechaniu myszką? */
 .active::after {
     content: "";
     width: 100%;
@@ -646,7 +645,6 @@ footer .contacts>li:not(:last-child) {
     letter-spacing: 0.03em;
     }
 
-    /*  właściwość hidden nie działa*/
 .card-description {
     padding: 20px 24px;
     border-left: 1px solid #EEEEEE;
@@ -726,31 +724,10 @@ footer .contacts>li:not(:last-child) {
     top: 0;
     left: 0;
     z-index: 1;
-    animation: animate125 3000ms ease-in-out,
-    opacity03 3000ms ease-in-out;
+    transition-property: opacity, visibility;
+    transition-duration: 1500ms, 1500ms;
+    transition-timing-function: ease-in-out, ease-in-out;
     }
-
-    @keyframes animate125 {
-        0% {
-            transform: scale(1);
-          }
-        
-          50% {
-            transform: scale(1.25);
-          }
-        
-          100% {
-            transform: scale(1);
-          }
-        }
-    
-    @keyframes opacity03 {
-        0% {opacity: 1}
-
-        50% {opacity: 0.3}
-
-        100% {opacity: 1}
-        }
 
 .modal {
     position: absolute;
@@ -777,7 +754,6 @@ footer .contacts>li:not(:last-child) {
     border-radius: 50%;
     border: 1px solid rgba(0, 0, 0, 0.1);
     cursor: pointer;
-    /* animation: animate125 3000ms ease-in-out, opacity03 3000ms; */
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
