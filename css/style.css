@@ -91,6 +91,7 @@ nav {
     position: relative;
     padding-top: 32px;
     padding-bottom: 32px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 
 .menu .menu-link {
@@ -105,6 +106,7 @@ nav {
 
 .menu-link {
     text-decoration: none;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 
 .menu-link:hover,
@@ -163,6 +165,7 @@ nav {
 
 .contact-link {
     color: var(--beige);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 
 .contact-link:hover,
@@ -423,6 +426,11 @@ img {
     justify-content: center;
     padding-bottom: 30px;
     }
+
+.social-link svg {
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
     
 .social-link:hover svg,
 .social-link:focus svg {
@@ -456,6 +464,11 @@ img {
     display: flex;
     flex-direction: row;
 	gap: 30px;
+    }
+
+.client-link svg {
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 
 .client-link:hover svg,
@@ -541,6 +554,10 @@ footer .contacts>li:not(:last-child) {
     letter-spacing: 0.03em;
     }
 
+.contacts .link {
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
 .contacts .link:hover,
 .contacts .link:focus {
     color: var(--active-color);
@@ -583,6 +600,10 @@ footer .contacts>li:not(:last-child) {
     display: block;
     }
 
+.footer-social-link svg {
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
 .footer-social-link:hover svg,
 .footer-social-link:focus svg {
     background-color: var(--active-color);
@@ -604,7 +625,7 @@ footer .contacts>li:not(:last-child) {
 .filters .filters-menu {
     display: inline-flex;
     justify-content: center;
-    margin-bottom: 34px;
+    margin-bottom: 50px;
     }
 
 .filters-menu > li:not(:last-child) {
@@ -620,6 +641,9 @@ footer .contacts>li:not(:last-child) {
     border-radius: 4px;
     border-style: hidden;
     padding: 6px 24px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 
 .button-filter:hover,
@@ -684,6 +708,7 @@ footer .contacts>li:not(:last-child) {
     padding: 0;
     text-align: left;
     width: 370px;
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 
 .card:hover .overlay {
