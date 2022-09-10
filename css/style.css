@@ -747,7 +747,7 @@ footer .contacts>li:not(:last-child) {
 .close-btn {
     position: absolute;
     top: 8px;
-    right: 8px;
+    right: 8px;++++++
     width: 30px;
     height: 30px;
     background-color: var(--white);
