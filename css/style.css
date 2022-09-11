@@ -612,12 +612,57 @@ footer .contacts>li:not(:last-child) {
     margin-left: 78px;
     }
 
-.email {
+.form-input {
     width: 358px;
     height: 50px;
+    background-color:  #2F303A;
     border-radius: 4px;
     border: 1px solid rgba(255, 255, 255, 0.3);
-}
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    /* margin-right: 12px; */
+    }
+
+/* czy tutaj stosujemy też placeholder-shown? */
+
+ .form-input::placeholder {font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 16px;
+    }
+
+.btn-sign {
+    display: inline-flex;
+    width: 200px;
+    height: 50px;
+    background-color: var(--active-color);
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    border-style: hidden;
+    cursor: pointer;
+    }
+
+.sign-in {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.86;
+    letter-spacing: 0.06em;
+    text-align: center;
+    color: var(--white);
+    padding: 10px 24px 10px 42px;
+    white-space: nowrap;
+    }
+
+.icon-send {
+    fill: var(--white);
+    width: 100%;
+    height: 100%;
+    padding-top: 13px;
+    padding-right: 8px;
+    padding-bottom: 13px;
+    }
 
 /* Portofolio - Filters */
 
