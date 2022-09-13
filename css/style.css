@@ -933,6 +933,11 @@ footer .contacts>li:not(:last-child) {
     padding-left: 16px;
     }
 
+.form-subscription {
+    /* margin-bottom: 30px; */
+    position: relative;
+    }
+
 .check-form {
     text-align: center;
     font-size: 14px;
@@ -940,8 +945,29 @@ footer .contacts>li:not(:last-child) {
     letter-spacing: 0.03em;
     color: rgba(117, 117, 117, 1);
     margin-bottom: 30px;
-    margin-right: 54px;
+    /* margin-right: 54px; */
+    position: relative;
     }
+
+.check-form:checked {
+
+    }
+
+.check-form:focus {
+
+}
+
+/* .hidden {
+    -moz-appearance: none;
+        -webkit-appearance: none;
+        appearance: none;
+    } */
+    
+.checkbox-icon {
+    position: absolute;
+    top: 
+    left: 
+}
     
 .reg-link {
     text-align: center;
