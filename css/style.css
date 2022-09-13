@@ -866,6 +866,14 @@ footer .contacts>li:not(:last-child) {
     color: var(--active-color);
     }
 
+.order-form {
+    display: flex;
+    width: 100%;
+    padding: 40px;
+    flex-direction: column;
+    color: var(--white);
+    }
+
 .modal-title {
     font-weight: 700;
     font-size: 20px;
@@ -874,7 +882,7 @@ footer .contacts>li:not(:last-child) {
     text-align: center;
     padding: 40px 40px 12px 40px;
     }
-
+    
 .form-label {
     font-weight: 400;
     font-size: 12px;
@@ -885,6 +893,10 @@ footer .contacts>li:not(:last-child) {
     color: rgba(117, 117, 117, 1);
     }
 
+.input-wrapper {
+    position: relative;
+    }
+    
 .data-input {
     width: 448px;
     height: 40px;
@@ -893,6 +905,12 @@ footer .contacts>li:not(:last-child) {
     margin-bottom: 10px;
     margin-left: 40px;
     margin-right: 40px;
+    }
+
+.input-icon {
+    position: absolute;
+    top: 11px;
+    left: 52px;
     }
 
 .form-comment {
@@ -924,7 +942,7 @@ footer .contacts>li:not(:last-child) {
     margin-bottom: 30px;
     margin-right: 54px;
     }
-
+    
 .reg-link {
     text-align: center;
     font-size: 14px;
