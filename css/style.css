@@ -933,51 +933,38 @@ footer .contacts>li:not(:last-child) {
     padding-left: 16px;
     }
 
-.form-subscription {
-    /* margin-bottom: 30px; */
+.form-label:focus-within {
+    border-color: var(--active-color);
+}
+
+.checkbox-form {
+    display: flex;
     position: relative;
     }
 
-.check-form {
-    text-align: center;
+.hidden {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    }
+
+.text-check-area {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: rgba(117, 117, 117, 1);
     margin-bottom: 30px;
-    /* margin-right: 54px; */
-    position: relative;
+    margin-left: 79px;
+    cursor: pointer;
     }
 
-.check-form:checked {
-
-    }
-
-.check-form:focus {
-
-}
-
-/* .hidden {
-    -moz-appearance: none;
-        -webkit-appearance: none;
-        appearance: none;
-    } */
-    
+    /* dlaczego muszą być 4px a nie 0?? */
 .checkbox-icon {
     position: absolute;
-    top: 
-    left: 
-}
-    
-.reg-link {
-    text-align: center;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-    color: var(--active-color);
+    top: 4px;
+    left: 55px;
     }
 
-    /* czy btn ma box-shadow? */
 .send-btn {
     width: 200px;
     height: 50px;
@@ -986,11 +973,13 @@ footer .contacts>li:not(:last-child) {
     border-style: hidden;
     margin-left: 164px;
     margin-right: 164px;
-    margin-bottom: 40px;
+    /* margin-bottom: 40px; */
     color: var(--white);
     font-weight: 700;
     font-size: 16px;
     line-height: 1.86;
     letter-spacing: 0.06em;
     text-align: center;
+    box-shadow: 0px 4px 4px 0px #00000026;
+    cursor: pointer;
     }
