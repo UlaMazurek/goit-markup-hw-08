@@ -998,11 +998,13 @@ footer .contacts>li:not(:last-child) {
     color: var(--active-color);
     }
 
-/* dlaczego muszą być 4px a nie 0?? */
 .checkbox-icon {
     position: absolute;
-    top: 4px;
+    top: 7px;
     left: 55px;
+    width: 16px;
+    height: 15px;
+    fill: var(--white);
     }
 
 .text-check-area::before {
@@ -1010,8 +1012,8 @@ footer .contacts>li:not(:last-child) {
     height: 15px;
     display: block;
     position: absolute;
-    left: 55px;
-    top: 3px;
+    left: 52px;
+    top: 2px;
     content: "";
     border-radius: 2px;
     border: 2px solid var(--main-color);
