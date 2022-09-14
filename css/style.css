@@ -610,6 +610,9 @@ footer .contacts>li:not(:last-child) {
 
 .footer-news {
     margin-left: 78px;
+    width: 570px;
+    display: flex;
+    flex-direction: column;
     }
 
 .form-input {
@@ -624,7 +627,8 @@ footer .contacts>li:not(:last-child) {
 
 /* czy tutaj stosujemy też placeholder-shown? */
 
- .form-input::placeholder {font-size: 16px;
+ .form-input::placeholder {
+    font-size: 16px;
     line-height: 1.25;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
@@ -634,7 +638,7 @@ footer .contacts>li:not(:last-child) {
     }
 
 .btn-sign {
-    display: inline-flex;
+    /* display: inline-flex; */
     width: 200px;
     height: 50px;
     background-color: var(--active-color);
@@ -642,26 +646,32 @@ footer .contacts>li:not(:last-child) {
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     border-style: hidden;
     cursor: pointer;
-    }
-
-.sign-in {
     font-weight: 700;
     font-size: 16px;
     line-height: 1.86;
     letter-spacing: 0.06em;
     text-align: center;
     color: var(--white);
-    padding: 10px 24px 10px 42px;
+    /* padding: 10px 24px 10px 42px; */
     white-space: nowrap;
+    margin-left: 12px;
+    position: relative;
+    }
+
+.btn-sign span {
+    margin-right: 24px;
     }
 
 .icon-send {
     fill: var(--white);
     width: 100%;
     height: 100%;
-    padding-top: 13px;
-    padding-right: 8px;
-    padding-bottom: 13px;
+    position: absolute;
+    margin-top: 5px;
+    }
+
+    .news-section {
+        display: flex;
     }
 
 /* Portofolio - Filters */
