@@ -864,11 +864,11 @@ footer .contacts>li:not(:last-child) {
     left: 5px;
     }
     
- .is-hidden {
+ /* .is-hidden {
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
-    }
+    } */
 
 .close-btn:hover,
 .close-btn:focus {
