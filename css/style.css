@@ -861,11 +861,11 @@ footer .contacts>li:not(:last-child) {
     left: 5px;
     }
     
- .is-hidden {
+ /* .is-hidden {
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
-    }
+    } */
 
 .close-btn:hover,
 .close-btn:focus {
@@ -905,6 +905,7 @@ footer .contacts>li:not(:last-child) {
 
 .input-wrapper {
     position: relative;
+    
     }
     
 .data-input {
@@ -921,8 +922,10 @@ footer .contacts>li:not(:last-child) {
 
 .input-icon {
     position: absolute;
-    top: 11px;
+    top: 35px;
     left: 52px;
+    width: 18px;
+    height: 18px;
     }
 
 .form-comment {
@@ -954,7 +957,9 @@ footer .contacts>li:not(:last-child) {
     fill: var(--active-color);
     }
 
-.data-input:focus-within + .input-icon,
+.data-input:focus-within + .input-icon {
+    fill: var(--active-color);
+    }
 
 .form-comment::placeholder {
     font-size: 12px;
