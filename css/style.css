@@ -630,6 +630,8 @@ footer .contacts>li:not(:last-child) {
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
     outline: none;
+    color: var(--white);
+    padding-left: 16px; 
     }
 
  .form-input::placeholder {
@@ -639,7 +641,6 @@ footer .contacts>li:not(:last-child) {
     color: rgba(255, 255, 255, 0.6);
     padding-top: 15px;
     padding-bottom: 15px;
-    padding-left: 16px;
     }
 
 .form-input:hover,
