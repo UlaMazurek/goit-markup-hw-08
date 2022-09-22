@@ -1,0 +1,34 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    }
+
+body {
+    font-family: "Roboto", "Raleway", sans-serif;
+    color: $primary-color;
+    background-color: $main-bg-color;
+    letter-spacing: 0.03em;
+    font-size: 14px;
+    line-height: 1.71;
+    }
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0px auto;
+    align-items: center;
+    justify-content: space-between;
+    }
+
+h1, h2, h3, h4, p, ul {
+    padding: 0; 
+    margin: 0;
+    }
+
+ul {
+    list-style-type: none;
+    }
