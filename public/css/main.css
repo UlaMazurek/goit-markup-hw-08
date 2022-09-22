@@ -3,6 +3,7 @@
 /*Animation*/
 /*Spacing*/
 /*Font-sizes*/
+/*Font-parameters*/
 *,
 *::before,
 *::after {
@@ -81,7 +82,6 @@ ul {
   border-radius: 2px;
   display: block;
 }
-
 .nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -91,30 +91,6 @@ ul {
           align-items: center;
   position: relative;
 }
-
-.logo, .logo__header {
-  font-family: "Raleway", sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.17;
-  letter-spacing: 0.03em;
-  text-decoration: none;
-}
-
-.logo__header {
-  color: #212121;
-  margin-right: 93px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding-top: 24px;
-  padding-bottom: 24px;
-}
-
-.logo--blue {
-  color: #2196F3;
-}
-
 .nav__menu-link, .nav__menu-link-current {
   font-weight: 500;
   font-size: 14px;
@@ -133,9 +109,30 @@ ul {
 .nav__menu-link:active, .nav__menu-link-current:active {
   color: #2196F3;
 }
-
 .nav__menu-link-current {
   position: relative;
+}
+
+.logo, .logo__header {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+}
+.logo__header {
+  color: #212121;
+  margin-right: 93px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.logo--blue {
+  color: #2196F3;
 }
 
 .contact {
@@ -146,7 +143,6 @@ ul {
 .contact p:not(:last-child) {
   margin-right: 50px;
 }
-
 .contact__link {
   font-weight: 500;
   font-size: 14px;
@@ -170,7 +166,6 @@ ul {
 .contact__link:active {
   color: #2196F3;
 }
-
 .contact__icon {
   width: 16px;
   height: 16px;
@@ -181,8 +176,8 @@ ul {
 .text {
   background-color: #2F303A;
   text-align: center;
-  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/back-photo.jpg);
-  background-image: linear-gradient(0deg, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 100%), url(../images/back-photo.jpg);
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../images/back-photo.jpg);
+  background-image: linear-gradient(0deg, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 100%), url(../../images/back-photo.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -234,4 +229,29 @@ ul {
 .no-padding {
   padding-top: 0px;
   padding-bottom: 0px;
+}
+
+.backdrop {
+  background-color: rgba(0, 0, 0, 0.2);
+  border: 1px solid #000000;
+  -webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  -webkit-transition-property: opacity, visibility;
+  transition-property: opacity, visibility;
+  -webkit-transition-duration: 500ms, 500ms;
+          transition-duration: 500ms, 500ms;
+  -webkit-transition-timing-function: ease-in-out, ease-in-out;
+          transition-timing-function: ease-in-out, ease-in-out;
+}
+
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
 }/*# sourceMappingURL=main.css.map */
