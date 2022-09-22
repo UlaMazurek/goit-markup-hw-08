@@ -1,0 +1,22 @@
+.logo {
+    font-family: "Raleway", sans-serif; 
+    font-weight: 700;
+    font-size: $logo-font-size;
+    line-height: $main-line-height;
+    letter-spacing: $main-letter-spacing;
+    text-decoration: none;
+
+    &__header {
+        @extend .logo;
+        color: $primary-color;
+        margin-right: 93px;
+        align-items: center;
+        padding-top: 24px;
+        padding-bottom: 24px;
+    }
+
+    }
+
+.logo--blue {
+    color: $active-color;
+    }

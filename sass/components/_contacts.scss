@@ -1,0 +1,33 @@
+.contact {
+    display: flex;
+
+    & p:not(:last-child) {
+        margin-right: 50px;
+        }
+    
+    &__link {font-weight: 500;
+        font-size: $main-font-size;
+        line-height: $main-line-height;
+        text-align: right;
+        letter-spacing: $small-letter-spacing;
+        text-decoration: none;
+        align-items: center;
+        display: flex;
+        color: $header-contact-color;
+        transition: $main-animation;
+    
+            &:hover,
+            &:focus {
+                color: $active-color;
+                }
+    
+            &:active {
+                color: $active-color;
+                }
+    }
+
+    &__icon {width: 16px;
+        height: 16px;
+        margin-right: 10px;
+        fill: currentColor;}
+}
