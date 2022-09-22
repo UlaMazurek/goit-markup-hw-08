@@ -1,5 +1,4 @@
-/*test comment part 4*/
-/*variables*/
+/*Colors*/
 $primary-color: #212121;
 $active-color: #2196F3;
 $main-bg-color: #FFFFFF;
@@ -14,7 +13,7 @@ $footer-input-placeholder-color: rgba(255, 255, 255, 0.6);
 $backdrop-bg-color: rgba(0, 0, 0, 0.2);
 $modal-bg-color: rgba(255, 255, 255, 1);
 $modal-label-color: rgba(117, 117, 117, 1);
-$modal-label-comment-color: rgba(117, 117, 117, 0.5);
+$modal-label-placeholder-color: rgba(117, 117, 117, 0.5);
 $scope-label-bg-color: rgba(47, 48, 58, 0.8);
 $border-header-color: #ECECEC;
 $border-client-color: #afb1b8;
@@ -22,6 +21,7 @@ $border-card-color: #EEEEEE;
 $border-close-btn-color: rgba(0, 0, 0, 0.1);
 $border-modal-input-color: rgba(33, 33, 33, 0.2);
 
+/*Box-shadows*/
 $main-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 $team-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 
 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -32,10 +32,13 @@ $portfolio-card-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
 $send-btn-shadow: 0px 4px 4px 0px #00000026;
 
+/*Animation*/
 $main-animation: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
+/*Spacing*/
 $section-padding: 94px;
 
+/*Font-sizes*/
 $main-font-size: 14px;
 $main-header-font-size: 44px;
 $second-header-font-size: 36px;
