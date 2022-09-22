@@ -1,0 +1,168 @@
+.order-form {
+    display: flex;
+    width: 100%;
+    padding: 40px;
+    flex-direction: column;
+    color: $main-bg-color;
+    border: none;
+
+    &__title {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: $main-line-height;
+        letter-spacing: $main-letter-spacing;
+        text-align: center;
+        padding: 40px 40px 12px 40px;
+        }
+
+    &__wrapper {
+        position: relative;
+        }
+
+    &__label {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: $main-line-height;
+        letter-spacing: 0.01em;
+        margin-bottom: 10px;
+        margin-left: 40px;
+        color: $modal-label-color;
+        }
+    
+    &__input {
+        width: 448px;
+        height: 40px;
+        border-radius: 4px;
+        border: 1px solid $border-modal-input-color;
+        margin-left: 40px;
+        margin-right: 40px;
+        padding-left: 42px;
+        transition: border $main-animation;
+        outline: none;
+
+            &:hover,
+            &:active {
+                border: $active-border-style;
+                }
+
+            &:focus-within {
+                border: $active-border-style;
+            }
+        }
+    
+    &__icon {
+        position: absolute;
+        top: 35px;
+        left: 52px;
+        width: 18px;
+        height: 18px;
+        }
+
+        &__input:hover + &__icon,
+        &__input:active + &__icon {
+            fill: $active-color;
+            }
+
+        &__input:focus-within + &__icon {
+            fill: $active-color;
+            }
+
+    &__comment {
+        width: 448px;
+        height: 120px;
+        border-radius: 4px;
+        border: 1px solid $border-modal-input-color;
+        margin-bottom: 20px;
+        margin-left: 40px;
+        margin-right: 40px;
+        resize: none;
+        padding-top: 12px;
+        padding-left: 16px;
+        transition: border $main-animation;
+        outline: none;
+
+        &::placeholder {
+            font-size: 12px;
+            line-height: $main-line-height;
+            letter-spacing: 0.01em;
+            color: $modal-label-placeholder-color;
+            }
+
+        &:hover,
+        &:active {
+            border: $active-border-style;
+            }
+
+        &:focus-within {
+            border: $active-border-style;
+            }
+
+        }
+    
+    &__checkbox {
+        display: flex;
+        position: relative;
+        }
+
+    &__text-check-area {
+        font-size: $main-font-size;
+        line-height: $big-line-height;
+        letter-spacing: $main-letter-spacing;
+        color: $modal-label-color;
+        margin-bottom: 30px;
+        margin-left: 79px;
+        cursor: pointer;
+
+        &::before {
+            width: 16px;
+            height: 15px;
+            display: block;
+            position: absolute;
+            left: 52px;
+            top: 3px;
+            content: "";
+            border-radius: 2px;
+            border: 2px solid $primary-color;
+            transition: border $main-animation,
+            background-color $main-animation;
+            }
+        }
+
+    &__link {
+        color: $active-color;
+        }
+
+    &__checkbox-icon {
+        position: absolute;
+        top: 7px;
+        left: 55px;
+        width: 16px;
+        height: 15px;
+        fill: $main-bg-color;
+        }
+
+    &__send-btn {
+        width: 200px;
+        height: 50px;
+        background-color: $active-color;
+        border-radius: 4px;
+        border-style: hidden;
+        margin-left: 164px;
+        margin-right: 164px;
+        margin-bottom: 40px;
+        color: $main-bg-color;
+        font-weight: 700;
+        font-size: $title-font-size;
+        line-height: 1.86;
+        letter-spacing: $big-letter-spacing;
+        text-align: center;
+        box-shadow: $send-btn-shadow;
+        cursor: pointer;
+        }
+
+    &__check-form:checked + &__text-check-area::before {
+        background-color: $active-color;
+        border: none;
+        }
+
+    }

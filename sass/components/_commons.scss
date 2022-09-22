@@ -64,4 +64,11 @@ ul {
     visibility: hidden;
     pointer-events: none;
     }
+
+.hidden {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    }
+    
     
