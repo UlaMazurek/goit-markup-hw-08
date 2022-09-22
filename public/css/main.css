@@ -608,6 +608,10 @@ img {
   background-color: #F5F4FA;
   text-align: center;
 }
+.team__container {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 .team__title {
   font-weight: 700;
   font-size: 36px;
