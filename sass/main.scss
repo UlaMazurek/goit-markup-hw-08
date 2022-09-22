@@ -3,16 +3,19 @@
 
 @import './components/_commons.scss';
 
+
+/*Header*/
 @import './components/_header.scss';
-
 @import './components/nav.scss';
-
 @import './components/logo.scss';
-
 @import './components/contacts.scss';
 
+/*Main text section*/
 @import './components/_text.scss';
 
+/*Modal*/
 @import './components/_modal.scss';
-
 @import './components/_order-form.scss';
+
+/*Asset section*/
+@import './components/_asset.scss';
