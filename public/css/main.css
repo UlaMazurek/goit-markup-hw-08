@@ -1,4 +1,5 @@
 /*Colors*/
+/*Border*/
 /*Box-shadows*/
 /*Animation*/
 /*Spacing*/
@@ -50,6 +51,31 @@ ul {
 .no-padding {
   padding-top: 0px;
   padding-bottom: 0px;
+}
+
+.backdrop {
+  background-color: rgba(0, 0, 0, 0.2);
+  border: 1px solid black;
+  -webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  -webkit-transition-property: opacity, visibility;
+  transition-property: opacity, visibility;
+  -webkit-transition-duration: 500ms, 500ms;
+          transition-duration: 500ms, 500ms;
+  -webkit-transition-timing-function: ease-in-out, ease-in-out;
+          transition-timing-function: ease-in-out, ease-in-out;
+}
+
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
 }
 
 .header {
@@ -135,7 +161,6 @@ ul {
   padding-top: 24px;
   padding-bottom: 24px;
 }
-
 .logo--blue {
   color: #2196F3;
 }
@@ -231,27 +256,43 @@ ul {
   cursor: pointer;
 }
 
-.backdrop {
-  background-color: rgba(0, 0, 0, 0.2);
-  border: 1px solid #000000;
-  -webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-          box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+.modal {
+  position: absolute;
+  width: 528px;
+  height: 581px;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid black;
+  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  border-radius: 4px;
+  border-style: hidden;
+}
+.modal__button {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  background-color: #FFFFFF;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  -webkit-transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal__button:hover, .modal__button:focus {
+  border-color: #2196F3;
+  color: #2196F3;
+}
+.modal__icon {
   width: 100%;
   height: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 1;
-  -webkit-transition-property: opacity, visibility;
-  transition-property: opacity, visibility;
-  -webkit-transition-duration: 500ms, 500ms;
-          transition-duration: 500ms, 500ms;
-  -webkit-transition-timing-function: ease-in-out, ease-in-out;
-          transition-timing-function: ease-in-out, ease-in-out;
-}
-
-.is-hidden {
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
+  fill: currentColor;
+  position: absolute;
+  top: 5px;
+  left: 5px;
 }/*# sourceMappingURL=main.css.map */
