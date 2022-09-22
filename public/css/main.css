@@ -535,4 +535,63 @@ ul {
   line-height: 1.71;
   letter-spacing: 0.03em;
   width: 270px;
+}
+
+/*Scope section*/
+.scope {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+.scope__title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  margin: 0 auto;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.scope__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 50px;
+  gap: 30px;
+  padding-bottom: 0;
+  padding-right: 0;
+  padding-left: 0;
+  padding-bottom: 94px;
+}
+.scope__list > li {
+  position: relative;
+}
+.scope__list img {
+  display: block;
+}
+.scope__label {
+  position: absolute;
+  text-transform: uppercase;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 27px 90px;
+  font-weight: 700;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  color: #FFFFFF;
+  width: 100%;
+  height: 70px;
+  background-color: rgba(47, 48, 58, 0.8);
+  -webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  white-space: nowrap;
+  border: none;
 }/*# sourceMappingURL=main.css.map */
