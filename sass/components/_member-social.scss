@@ -1,0 +1,29 @@
+.member-social {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 30px;
+
+    & > li:not(:last-child) {
+        margin-right: 10px;
+        }
+
+    &__link svg {
+        transition: fill $main-animation,
+        background-color $main-animation;
+
+        &:hover ,
+        &:focus  {
+            fill: $main-bg-color;
+            background-color: $active-color;
+            }
+        }
+
+    &__icon {
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        background-repeat: no-repeat;
+        fill: $border-client-color;
+        cursor: pointer;
+        }
+    }

@@ -84,6 +84,13 @@ ul {
   appearance: none;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
 /*Header*/
 .header {
   border-bottom: 1px solid #ECECEC;
@@ -594,4 +601,97 @@ ul {
           box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   white-space: nowrap;
   border: none;
+}
+
+/*Team section*/
+.team {
+  background-color: #F5F4FA;
+  text-align: center;
+}
+.team__title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+  text-align: center;
+}
+.team__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.team__list > li {
+  background-color: #FFFFFF;
+  width: 270px;
+  height: 428px;
+}
+.team__list > li:not(:last-child) {
+  margin-right: 30px;
+}
+.team__list img {
+  margin-bottom: 30px;
+}
+
+.team-card {
+  padding: 0;
+  border-radius: 0 0 4px 4px;
+  width: 270px;
+  height: 428px;
+  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+.team-card__name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.17;
+  color: #212121;
+  letter-spacing: 0.03em;
+  margin-bottom: 10px;
+}
+.team-card__job-title {
+  font-size: 16px;
+  line-height: 1.17;
+  color: #757575;
+  letter-spacing: 0.03em;
+  margin-bottom: 16px;
+}
+
+.member-social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 30px;
+}
+.member-social > li:not(:last-child) {
+  margin-right: 10px;
+}
+.member-social__link svg {
+  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.member-social__link svg:hover, .member-social__link svg:focus {
+  fill: #FFFFFF;
+  background-color: #2196F3;
+}
+.member-social__icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  fill: #afb1b8;
+  cursor: pointer;
 }/*# sourceMappingURL=main.css.map */
