@@ -1,0 +1,146 @@
+// <div class="list">
+//             <ul class="portfolio__grid">
+//                 <li class="portfolio__item">
+//                     <div class="portfolio__card-all">
+//                         <img src="./images/photo1-portfolio.jpg" alt="laptop z grafiką" width="370" height="294" />
+        
+//                         <div class="portfolio__overlay">
+//                             <p>Technocrack jest popularną platformą wykorzystywaną do rozpowszechniania koronawirusa. Firmy wykorzystują tę platformę do celów szpiegowskich i ataków na niezabezpieczone serwery konkurencji
+//                             </p>
+//                         </div>
+//                     </div>
+        
+//                     <div class="portfolio__card-description">
+//                             <h4 class="portfolio__title">Technocrack</h4>
+//                             <p class="portfolio__type">Strona internetowa</p>
+//                     </div>
+//                 </li> -->
+
+
+
+.portfolio {
+    text-align: center;
+    display: flex;
+
+    // &__container {
+    //     display: flex;
+    // }
+
+    &__filters {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        }
+
+    &__filters-menu {
+        display: inline-flex;
+        justify-content: center;
+        margin-bottom: 50px;
+
+        & > li:not(:last-child) {
+            margin-right: 8px;
+            }
+        }
+
+    &__button {
+        font-weight: 500;
+        font-size: $title-font-size;
+        line-height: 1.63;
+        letter-spacing: $main-letter-spacing;
+        cursor: pointer;
+        border-radius: 4px;
+        border-style: hidden;
+        padding: 6px 24px;
+        transition: color $main-animation,
+        background-color $main-animation,
+        box-shadow $main-animation;
+
+            &:hover,
+            &:focus {
+                color: $main-bg-color;
+                background-color: $active-color;
+                box-shadow: $main-shadow;
+                }
+
+            &:active {
+                color: $main-bg-color;
+                background-color: $active-color;
+                }
+        }
+
+    &__grid {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        padding: 0;
+        align-content: center;
+        }
+
+    &__item {
+        padding: 0;
+        text-align: left;
+        width: 370px;
+        transition: box-shadow $main-animation;
+
+            &:hover,
+            &:focus {
+                box-shadow: $portfolio-card-shadow;
+                cursor: pointer;
+                }
+
+            &:hover .overlay {
+                transform: translateY(0);
+                }
+        }
+
+    &__card-all {
+        position: relative;
+        overflow: hidden;
+        transition: box-shadow $main-animation;
+        }
+
+    &__overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 294px;
+        background-color: $active-color;
+        transform: translateY(100%);
+        transition: transform $main-animation;
+        align-items: center;
+        display: flex;
+
+            & > p {
+                color: $main-bg-color;
+                padding: 49px 45px 49px 24px;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 1.56;
+                letter-spacing: $main-letter-spacing;
+                }
+        }
+
+    &__card-description {
+        padding: 20px 24px;
+        border-left: 1px solid $border-card-color;
+        border-right: 1px solid $border-card-color;
+        border-bottom: 1px solid $border-card-color;
+        border-top: 0px;
+        }
+
+    &__title {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 2;
+        letter-spacing: $big-letter-spacing;
+        margin-bottom: 4px;
+        }
+
+    &__type {
+        font-size: $title-font-size;
+        line-height: 1.88;
+        color: $header-contact-color;
+        letter-spacing: $main-letter-spacing;
+        }
+}
