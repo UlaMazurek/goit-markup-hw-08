@@ -1,0 +1,31 @@
+.footer-social {
+    width: 206px;
+    margin-top: 72px;
+
+    &__list {
+        display: flex;
+
+        & > li:not(:last-child) {
+            margin-right: 10px;
+            }
+        }
+
+    &__link svg {
+        transition: background-color $main-animation;
+
+        &:hover ,
+        &:focus {
+            background-color: $active-color;
+            }
+        }
+
+    &__icon {
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        fill: $main-bg-color;
+        background-color: $footer-icon-bg-color;
+        cursor: pointer;
+        display: block;
+        }
+}

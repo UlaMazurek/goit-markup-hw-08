@@ -1,0 +1,41 @@
+.address { 
+    flex-direction: column;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    margin-right: 70px;
+    display: flex;
+
+    &__list {
+        flex-direction: column;
+
+        & > li:not(:last-child) {
+            margin-bottom: 9px;
+            }
+        }
+
+    &__place {
+        font-size: $main-font-size;
+        line-height: $big-line-height;
+        color: $main-bg-color; 
+        font-style: normal;
+        letter-spacing: $main-letter-spacing;
+        }
+
+    &__link {
+        text-decoration: none;
+        color: $footer-contact-color;
+        font-size: $main-font-size;
+        line-height: $big-line-height; 
+        letter-spacing: $main-letter-spacing;
+        transition: color $main-animation;
+
+            &:hover,
+            &:focus {
+                color: $active-color;
+                }
+
+            &:active {
+                color: $active-color;
+                }
+        }
+}
