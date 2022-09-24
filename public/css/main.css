@@ -48,11 +48,6 @@ ul {
   list-style-type: none;
 }
 
-.no-padding {
-  padding-top: 0px;
-  padding-bottom: 0px;
-}
-
 .backdrop {
   background-color: rgba(0, 0, 0, 0.2);
   border: 1px solid black;
@@ -974,6 +969,10 @@ img {
   display: -ms-flexbox;
   display: flex;
 }
+.portfolio__container {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 .portfolio__filters {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1044,9 +1043,9 @@ img {
           box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
   cursor: pointer;
 }
-.portfolio__item:hover .overlay {
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
+.portfolio__item:hover .portfolio__overlay {
+  -webkit-transform: translateY(0%);
+          transform: translateY(0%);
 }
 .portfolio__card-all {
   position: relative;
@@ -1061,7 +1060,7 @@ img {
   top: 0;
   left: 0;
   width: 100%;
-  height: 294px;
+  height: 100%;
   background-color: #2196F3;
   -webkit-transform: translateY(100%);
           transform: translateY(100%);
