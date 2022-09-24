@@ -1,4 +1,9 @@
 .clients {
+
+    &__container {
+        padding-top: $section-padding-top;
+        padding-bottom: $section-padding-bottom;
+    }
     
     &__title {
         font-weight: 700;
@@ -20,21 +25,21 @@
     &__link svg {
         transition: fill $main-animation,
         border-color $main-animation;
-
-        &:hover,
-        &:focus {
-            fill: $active-color;
-            border-color: $active-color;
-            }
-    }
-
-    &__logo {
         width: 170px;
         height: 92px;
         border: 1px solid $border-client-color;
         border-radius: 4px;
         fill: $border-client-color;
         cursor: pointer;
+
+        &:hover,
+        &:focus {
+            fill: $active-color;
+            border-color: $active-color;
+            }
+        }
+
+    &__logo {
 
         &--one {
             padding: 
@@ -44,5 +49,7 @@
         &--two {
             padding: 16px 32px;
             }
+
         }
+
 }
