@@ -29,13 +29,13 @@
         letter-spacing: $main-letter-spacing;
         transition: color $main-animation;
 
-            &:hover,
-            &:focus {
-                color: $active-color;
-                }
+        &:hover,
+        &:focus {
+            color: $active-color;
+            }
 
-            &:active {
-                color: $active-color;
-                }
+        &:active {
+            color: $active-color;
+            }
         }
 }

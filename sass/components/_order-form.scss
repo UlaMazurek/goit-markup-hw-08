@@ -40,13 +40,13 @@
         transition: border $main-animation;
         outline: none;
 
-            &:hover,
-            &:active {
-                border: $active-border-style;
-                }
+        &:hover,
+        &:active {
+            border: $active-border-style;
+            }
 
-            &:focus-within {
-                border: $active-border-style;
+        &:focus-within {
+            border: $active-border-style;
             }
         }
     
@@ -58,14 +58,14 @@
         height: 18px;
         }
 
-        &__input:hover + &__icon,
-        &__input:active + &__icon {
-            fill: $active-color;
-            }
+    &__input:hover + &__icon,
+    &__input:active + &__icon {
+        fill: $active-color;
+        }
 
-        &__input:focus-within + &__icon {
-            fill: $active-color;
-            }
+    &__input:focus-within + &__icon {
+        fill: $active-color;
+        }
 
     &__comment {
         width: 448px;
@@ -96,7 +96,6 @@
         &:focus-within {
             border: $active-border-style;
             }
-
         }
     
     &__checkbox {
@@ -164,5 +163,4 @@
         background-color: $active-color;
         border: none;
         }
-
-    }
+}

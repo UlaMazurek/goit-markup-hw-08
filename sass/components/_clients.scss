@@ -3,7 +3,7 @@
     &__container {
         padding-top: $section-padding-top;
         padding-bottom: $section-padding-bottom;
-    }
+        }
     
     &__title {
         font-weight: 700;
@@ -40,7 +40,7 @@
         }
 
     &__logo {
-
+        
         &--one {
             padding: 
             17.71px 32px 14.25px 32px;
@@ -49,7 +49,5 @@
         &--two {
             padding: 16px 32px;
             }
-
         }
-
 }

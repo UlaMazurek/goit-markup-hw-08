@@ -2,11 +2,11 @@
     display: flex;
     align-items: center;
 
-    & .nav__list > li:not(:last-child) {
+    &__list > li:not(:last-child) {
         margin-right: 46px;
         }
 
-    & .nav__list .active::after {
+    &__list .active::after {
         content: "";
         position: absolute;
         bottom: -1px;
@@ -22,10 +22,10 @@
         display: flex;
         align-items: center;
         position: relative;
-    }
+        }
 
-    &__menu-link 
-        {font-weight: 500;
+    &__menu-link {
+        font-weight: 500;
         font-size: $main-font-size;
         line-height: $main-line-height;
         letter-spacing: $small-letter-spacing;
@@ -43,11 +43,11 @@
         &:active {
             color: $active-color;
             }
-        }
 
-    &__menu-link-current {
-        @extend .nav__menu-link;
-        position: relative;
+        &-current {
+            @extend .nav__menu-link;
+            position: relative;
+            color: $active-color;
+            }
         }
-
-    }
+}

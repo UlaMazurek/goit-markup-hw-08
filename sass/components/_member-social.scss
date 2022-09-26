@@ -11,8 +11,8 @@
         transition: fill $main-animation,
         background-color $main-animation;
 
-        &:hover ,
-        &:focus  {
+        &:hover,
+        &:focus {
             fill: $main-bg-color;
             background-color: $active-color;
             }
@@ -26,4 +26,4 @@
         fill: $border-client-color;
         cursor: pointer;
         }
-    }
+}

@@ -20,23 +20,23 @@
         color: $main-bg-color;
         padding-left: 16px;
 
-            &::placeholder {
-                font-size: $title-font-size;
-                line-height: 1.25;
-                letter-spacing: $main-letter-spacing;
-                color: $footer-input-placeholder-color;
-                padding-top: 15px;
-                padding-bottom: 15px;
-                }
+        &::placeholder {
+            font-size: $title-font-size;
+            line-height: 1.25;
+            letter-spacing: $main-letter-spacing;
+            color: $footer-input-placeholder-color;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            }
 
-            &:hover,
-            &:active {
-                border: $active-border-style;
-                }
+        &:hover,
+        &:active {
+            border: $active-border-style;
+            }
 
-            &:focus-within {
-                border: $active-border-style;
-                }
+        &:focus-within {
+            border: $active-border-style;
+            }
         }
 
     &__icon {
