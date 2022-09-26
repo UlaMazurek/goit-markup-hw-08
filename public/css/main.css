@@ -866,7 +866,7 @@ img {
   -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.footer-social__link svg:hover, .footer-social__link svg:focus {
+.footer-social__link:hover svg, .footer-social__link:focus svg {
   background-color: #2196F3;
 }
 .footer-social__icon {
