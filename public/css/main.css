@@ -726,6 +726,10 @@ img {
   fill: #FFFFFF;
   background-color: #2196F3;
 }
+.member-social__link svg:focus .member-social__link svg__icon {
+  fill: #FFFFFF;
+  background-color: #2196F3;
+}
 .member-social__icon {
   width: 44px;
   height: 44px;
