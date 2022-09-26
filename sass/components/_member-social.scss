@@ -10,12 +10,12 @@
     &__link svg {
         transition: fill $main-animation,
         background-color $main-animation;
-        
-        &:hover,
-        &:focus {
-            fill: $main-bg-color;
-            background-color: $active-color;
-            }
+        }
+
+    &__link:hover svg,
+    &__link:focus svg {
+        fill: $main-bg-color;
+        background-color: $active-color;
         }
 
     &__icon {
