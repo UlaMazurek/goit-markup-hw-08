@@ -31,12 +31,12 @@
         border-radius: 4px;
         fill: $border-client-color;
         cursor: pointer;
-        
-        &:hover,
-        &:focus {
-            fill: $active-color;
-            border-color: $active-color;
-            }
+        }
+
+    &__link:hover svg,
+    &__link:focus svg {
+        fill: $active-color;
+        border-color: $active-color;
         }
 
     &__logo {

@@ -770,7 +770,7 @@ img {
   fill: #afb1b8;
   cursor: pointer;
 }
-.clients__link svg:hover, .clients__link svg:focus {
+.clients__link:hover svg, .clients__link:focus svg {
   fill: #2196F3;
   border-color: #2196F3;
 }
