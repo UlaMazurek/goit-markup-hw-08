@@ -6,9 +6,10 @@
 
 /*Header*/
 @import './components/_header.scss';
-@import './components/nav.scss';
-@import './components/logo.scss';
-@import './components/contacts.scss';
+@import './components/_nav.scss';
+@import './components/_logo.scss';
+@import './components/_contacts.scss';
+@import './components/_mobile.scss';
 
 /*Main text section*/
 @import './components/_text.scss';
