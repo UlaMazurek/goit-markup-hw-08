@@ -48,8 +48,58 @@
                     +48 111 111 111</a>
                 </p>
             </div>
+
+            <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+                <svg>
+                    <use
+                    href="./images/icons.svg#icon-menu_24px"
+                    width="24"
+                    height="16">
+                </use>
+                </svg>
+            </button>
+            
         </div>
     </header>
+
+
+<!-- Mobile view -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+
+        <button class="menu-toggle js-close-menu">
+            <svg>
+                <use
+                href="./images/icons.svg#icon-close_24px"
+                width="18.67"
+                height="18.67">
+                </use>
+            </svg>
+        </button>
+
+        <ul class="mobile-list">
+            <li><a href="index.html" class="mobile-list__link--current">Agencja/a></li>
+            <li><a href="portfolio.html" class="mobile-list__link">Portfolio</a></li>
+            <li><a href="" class="mobile-list__link">Kontakt</a></li>
+        </ul>
+
+        <div>
+            <ul class="mobile-contact">
+                <li>
+                  <a class="mobile-contact__link--active" href="tel:+48111111111">+48 111 111 111</a>
+                </li>
+                <li>
+                  <a class="mobile-contact__link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                </li>
+            </ul>
+
+            <ul class="mobile-pages">
+                <li><a href="" class="mobile-pages__link">Instagram</a></li>
+                <li><a href="" class="mobile-pages__link">Twitter</a></li>
+                <li><a href="" class="mobile-pages__link">Facebook</a></li>
+                <li><a href="" class="mobile-pages__link">LinkedIn</a></li>
+            </ul>
+        </div>
+    </div>
 
 <main>
     <section class="text section no-padding">
