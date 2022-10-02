@@ -2,11 +2,10 @@
     display: flex;
     align-items: center;
 
-    @media screen and (min-width: 768px) {
-        &__list{
-            display: flex;
-            }
-        }
+    // @media screen and (min-width: 768px) {
+    //     
+    //         
+    //     }
 
     &__list > li:not(:last-child) {
         margin-right: 46px;

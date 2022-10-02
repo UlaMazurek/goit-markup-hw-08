@@ -22,18 +22,13 @@ body {
   line-height: 1.71;
 }
 
-@media screen and (min-width: 320px) {
-  body {
-    overflow-x: hidden;
-  }
-}
 .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  width: 480px;
+  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0px auto;
@@ -45,16 +40,6 @@ body {
           justify-content: space-between;
 }
 
-@media screen and (min-width: 768px) {
-  container {
-    width: 768px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  container {
-    width: 1200px;
-  }
-}
 h1, h2, h3, h4, p, ul {
   padding: 0;
   margin: 0;
@@ -65,16 +50,10 @@ ul {
 }
 
 .section {
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
-@media screen and (min-width: 1200px) {
-  .section {
-    padding-top: 94px;
-    padding-bottom: 94px;
-  }
-}
 .backdrop {
   background-color: rgba(0, 0, 0, 0.2);
   border: 1px solid black;
@@ -173,13 +152,6 @@ img {
       -ms-flex-align: center;
           align-items: center;
 }
-@media screen and (min-width: 768px) {
-  .nav__list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-}
 .nav__list > li:not(:last-child) {
   margin-right: 46px;
 }
@@ -251,35 +223,6 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-@media screen and (min-width: 768px) {
-  .contact .conatct {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .contact .contact {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    gap: 50px;
-  }
 }
 .contact p:not(:last-child) {
   margin-right: 50px;

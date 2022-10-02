@@ -13,16 +13,16 @@ body {
     line-height: 1.71;
     }
 
-@media screen and (min-width: 320px) {
-    body {
-        overflow-x: hidden;
-        }
-    }
+// @media screen and (min-width: 320px) {
+//     body {
+//         overflow-x: hidden;
+//         }
+//     }
 
 .container {
     display: flex;
     flex-wrap: wrap;
-    width: 480px;
+    width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
     margin: 0px auto;
@@ -30,17 +30,17 @@ body {
     justify-content: space-between;
     }
 
-@media screen and (min-width: 768px) {
-    container {
-        width: 768px;
-        }
-    }
+// @media screen and (min-width: 768px) {
+//     container {
+//         width: 768px;
+//         }
+//     }
 
-@media screen and (min-width: 1200px) {
-    container {
-        width: 1200px;
-        }
-    }
+// @media screen and (min-width: 1200px) {
+//     container {
+//         width: 1200px;
+//         }
+//     }
 
 h1, h2, h3, h4, p, ul {
     padding: 0; 
@@ -52,16 +52,18 @@ ul {
     }
 
 .section {
-    padding-top: $mobile-section-padding;
-    padding-bottom: $mobile-section-padding;
+    // padding-top: $mobile-section-padding;
+    // padding-bottom: $mobile-section-padding;
+    padding-top: $section-padding-top;
+    padding-bottom: $section-padding-bottom;
     }
 
-@media screen and (min-width: 1200px) {
-    .section {
-        padding-top: $section-padding-top;
-        padding-bottom: $section-padding-bottom;
-        }
-    }
+// @media screen and (min-width: 1200px) {
+//     .section {
+//         padding-top: $section-padding-top;
+//         padding-bottom: $section-padding-bottom;
+//         }
+//     }
 
 .backdrop {
     background-color: $backdrop-bg-color;
