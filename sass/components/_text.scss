@@ -11,25 +11,45 @@
     background-position: center;
     box-shadow: $main-shadow;
     position: relative;
+    width: 480px;
+
+    // @media screen and (max-width: 767px) {
+    //     .text {
+    //         width: 480px;
+    //     }
+    // }
 
     &__container {
         flex-direction: column;
-        padding-top: 200px;
-        padding-bottom: 200px;
+        // padding-top: 200px;
+        padding-top: 118px;
+        // padding-bottom: 200px;
+        padding-bottom: 118px;
+        width: 480px;
+        }
+
+    @media screen and (min-width: 768px) {
+        .text__container {
+            width: 768px;
+            }
         }
 
     &__title {
         font-weight: 900;
         color: $main-bg-color;
-        font-size: $main-header-font-size;
-        line-height: 1.36;
+        // font-size: $main-header-font-size;
+        font-size: $logo-font-size;
+        // line-height: 1.36;
+        line-height: 1.61;
         letter-spacing: 0.06em;
         text-align: center;
         margin-left: auto;
         margin-right: auto;
         margin-bottom: 30px;
-        width: 696px;
-        height: 120px;
+        // width: 696px;
+        width: 365px;
+        // height: 120px;
+        height: 84px;
         }
 
     &__button {
