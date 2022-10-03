@@ -3,7 +3,7 @@
     border: none;
     cursor: pointer;
     position: fixed;
-    top: 22px;
+    top: 15px;
     right: 23px;
     width: 40px;
     height: 40px;
@@ -20,16 +20,45 @@
         }
     }
 
-//  .mobile-icon {
-//     position: fixed;
-//     top: 22px;
-//     right: 23px;
-//     }
+.mobile-icon {
+    position: fixed;
+    width: 18.67px;
+    height: 18.67px;
+    top: 22px;
+    right: 23px;
+    }
 
-//  .menu-container {
-//     background-color: $main-bg-color;
-//     position: fixed;
-//     top: 0;
-//     left: 0;
-//     padding: 48px 40px;
-//  }
+.menu-container {
+    background-color: $main-bg-color;
+    // position: fixed;
+    // top: 0;
+    // left: 0;
+    padding: 48px 40px;
+    width: 480px;
+    }
+
+.mobile-menu {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: $main-line-height;
+    letter-spacing: $small-letter-spacing;
+    color: $primary-color;      
+
+    &__link {
+        text-decoration: none;
+        color: $primary-color;
+
+        &--current {
+            @extend .mobile-menu__link;
+            color: $active-color;
+            }
+        }
+
+    &__name {
+        margin-left: 40px;
+
+        &:not(:last-child) {
+            margin-bottom: 32px;
+            }
+        }
+}
