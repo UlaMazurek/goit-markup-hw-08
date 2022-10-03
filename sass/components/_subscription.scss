@@ -1,15 +1,20 @@
 .subscription {
-    margin-left: 78px;
-    width: 570px;
+    // margin-left: 78px;
+    // width: 570px;
+    width: 450px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    text-align: center;
 
     &__section {
         display: flex;
+        flex-direction: column;
         }
 
     &__input {
-        width: 358px;
+        // width: 358px;
+        width: 450px;
         height: 50px;
         background-color: $footer-bg-color;
         border-radius: 4px;
@@ -19,6 +24,7 @@
         outline: none;
         color: $main-bg-color;
         padding-left: 16px;
+        margin-bottom: 20px;
 
         &::placeholder {
             font-size: $title-font-size;

@@ -130,8 +130,10 @@ img {
     text-align: center;
     color: $main-bg-color;
     white-space: nowrap;
-    margin-left: 12px;
+    // margin-left: 12px;
     position: relative;
+    margin: 0 auto;
+    margin-bottom: 60px;
 
     & span {
         margin-right: 24px;

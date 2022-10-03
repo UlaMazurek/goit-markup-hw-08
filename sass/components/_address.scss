@@ -2,21 +2,24 @@
     flex-direction: column;
     padding-top: 60px;
     padding-bottom: 60px;
-    margin-right: 70px;
+    // margin-right: 70px;
     display: flex;
+    justify-content: center;
+    text-align: center;
 
     &__list {
         flex-direction: column;
 
         & > li:not(:last-child) {
-            margin-bottom: 9px;
+            // margin-bottom: 9px;
+            margin-bottom: 8px;
             }
         }
 
     &__place {
         font-size: $main-font-size;
         line-height: $big-line-height;
-        color: $main-bg-color; 
+        color: $modal-bg-color; 
         font-style: normal;
         letter-spacing: $main-letter-spacing;
         }
