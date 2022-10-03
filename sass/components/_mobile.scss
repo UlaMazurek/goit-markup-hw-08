@@ -2,9 +2,10 @@
     background-color: $main-bg-color;
     border: none;
     cursor: pointer;
-    position: fixed;
-    top: 15px;
-    right: 23px;
+    // position: fixed;
+    position: absolute;
+    top: 0px;
+    right: 0px;
     width: 40px;
     height: 40px;
 
@@ -21,20 +22,34 @@
     }
 
 .mobile-icon {
-    position: fixed;
+    // position: fixed;
+    position: absolute;
     width: 18.67px;
     height: 18.67px;
     top: 22px;
     right: 23px;
+
+    &:hover,
+    &:focus {
+        fill: $active-color;
+        }
     }
 
 .menu-container {
     background-color: $main-bg-color;
-    // position: fixed;
-    // top: 0;
-    // left: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 999;
     padding: 48px 40px;
-    width: 480px;
+    transform: translateX(100%);
+    transition: transform 250ms ease-in-out;
+    }
+
+.menu-container.is-open {
+    transform: translateX(0);
     }
 
 .mobile-menu {
@@ -55,10 +70,54 @@
         }
 
     &__name {
-        margin-left: 40px;
 
         &:not(:last-child) {
             margin-bottom: 32px;
             }
+
+        &:last-child {
+            margin-bottom: 302px;
+            }
         }
+}
+
+.mobile-contact {
+
+    &__link--active {
+        font-weight: 500;
+        font-size: 34px;
+        line-height: $main-line-height;
+        letter-spacing: $small-letter-spacing;
+        padding-bottom: 32px;
+        color: $active-color;
+        text-decoration: none;
+        // height: 40px;
+        }
+
+    &__link {
+        font-weight: 500;
+        font-size: 24px;
+        line-height: $main-line-height;
+        letter-spacing: $small-letter-spacing;
+        text-decoration: none;
+        color: $modal-label-color;
+        padding-bottom: 64px;
+        }
+}
+
+.mobile-pages {
+    display: flex;
+
+    & > li:not(:last-child) {
+        margin-right: 20px;
+        }
+
+    &__link {
+        color: $active-color;
+        text-decoration: none;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 1.22;
+        letter-spacing: $small-letter-spacing;
+    }
 }
