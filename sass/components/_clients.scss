@@ -1,25 +1,40 @@
 .clients {
 
     &__container {
-        padding-top: $section-padding-top;
-        padding-bottom: $section-padding-bottom;
+    //     padding-top: $section-padding-top;
+    //     padding-bottom: $section-padding-bottom;
+        width: 450px;
+        padding: 0;
         }
     
     &__title {
         font-weight: 700;
-        font-size: $second-header-font-size;
+        // font-size: $second-header-font-size;
+        font-size: 28px;
         line-height: $main-line-height;
         letter-spacing: $main-letter-spacing;
         text-align: center;
         margin-left: auto;
         margin-right: auto;
         margin-bottom: 50px;
+        margin-bottom: 30px;
         }
 
     &__list {
         display: flex;
+        flex-wrap: wrap;
         flex-direction: row;
-	    gap: 30px;
+        justify-content: center;
+        
+	    // gap: 30px;
+
+        & > li {
+            flex-basis: calc(100% / 2);
+           
+            // &:not(:last-child) {
+            //     padding-bottom: 30px;
+            //     }
+            }
         }
 
     &__link svg {
@@ -31,6 +46,9 @@
         border-radius: 4px;
         fill: $border-client-color;
         cursor: pointer;
+        width: 210px;
+        height: 92px;
+        
         }
 
     &__link:hover svg,
