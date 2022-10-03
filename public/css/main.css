@@ -163,6 +163,11 @@ img {
   width: 480px;
   height: 60px;
 }
+@media screen and (min-width: 768px) {
+  .header .header {
+    width: 768px;
+  }
+}
 .header__container {
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -192,6 +197,11 @@ img {
 }
 .nav__list > li:not(:last-child) {
   margin-right: 46px;
+}
+@media screen and (min-width: 768px) {
+  .nav__list > li:not(:last-child) {
+    margin-right: 60px;
+  }
 }
 .nav__list .active::after {
   content: "";
@@ -225,6 +235,11 @@ img {
 .nav__menu-link-current {
   position: relative;
   color: #2196F3;
+}
+@media screen and (min-width: 768px) {
+  .nav__menu-link-current {
+    margin-left: 83px;
+  }
 }
 
 .logo, .footer__logo, .logo__header {
@@ -344,6 +359,11 @@ img {
   transition: transform 250ms ease-in-out, -webkit-transform 250ms ease-in-out;
 }
 
+@media screen and (min-width: 768px) {
+  .menu-container {
+    display: none;
+  }
+}
 .menu-container.is-open {
   -webkit-transform: translateX(0);
           transform: translateX(0);
@@ -414,12 +434,15 @@ img {
   background-image: linear-gradient(0deg, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 100%), url(../../images/header-img.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-size: 480px;
   background-position: center;
   -webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   position: relative;
-  width: 480px;
+}
+@media screen and (min-width: 768px) {
+  .text .text {
+    width: 768px;
+  }
 }
 .text__container {
   -webkit-box-orient: vertical;
@@ -429,11 +452,6 @@ img {
   padding-top: 118px;
   padding-bottom: 118px;
   width: 480px;
-}
-@media screen and (min-width: 768px) {
-  .text .text__container {
-    width: 768px;
-  }
 }
 .text__title {
   font-weight: 900;
@@ -732,6 +750,12 @@ img {
   border-radius: 4px;
   padding: 25px 190px;
 }
+@media screen and (min-width: 768px) {
+  .asset__logo {
+    width: 354px;
+    padding: 25px 142px;
+  }
+}
 .asset__title {
   font-weight: 700;
   font-size: 14px;
@@ -740,12 +764,22 @@ img {
   margin-bottom: 10px;
   text-align: center;
 }
+@media screen and (min-width: 768px) {
+  .asset__title {
+    text-align: left;
+  }
+}
 .asset__description {
   color: #757575;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   width: 450px;
+}
+@media screen and (min-width: 768px) {
+  .asset__description {
+    width: 354px;
+  }
 }
 
 /*Scope section*/
@@ -755,7 +789,7 @@ img {
   margin-right: auto;
   display: none;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .scope .scope {
     display: -webkit-box;
     display: -ms-flexbox;

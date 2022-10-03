@@ -24,3 +24,17 @@
         margin-bottom: 16px;
         }
 }
+
+    @media screen and (min-width: 768px) {
+        &__team-card {
+            width: 354px;
+            height: 536px;
+
+            & > img {
+                width: 354px;
+                height: 374px;
+                }
+            }
+
+        
+    }

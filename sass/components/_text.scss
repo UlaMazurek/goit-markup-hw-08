@@ -8,17 +8,16 @@
         url(../../images/header-img.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-size: 480px;
     background-position: center;
     box-shadow: $main-shadow;
     position: relative;
-    width: 480px;
+    // width: 480px;
 
-    // @media screen and (max-width: 767px) {
-    //     .text {
-    //         width: 480px;
-    //     }
-    // }
+    @media screen and (min-width: 768px) {
+         .text {
+            width: 768px;
+            }
+        }
 
     &__container {
         flex-direction: column;
@@ -29,11 +28,11 @@
         width: 480px;
         }
 
-    @media screen and (min-width: 768px) {
-        .text__container {
-            width: 768px;
-            }
-        }
+    // @media screen and (min-width: 768px) {
+    //     .text__container {
+    //         width: 768px;
+    //         }
+    //     }
 
     &__title {
         font-weight: 900;

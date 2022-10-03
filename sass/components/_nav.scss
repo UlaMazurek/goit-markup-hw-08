@@ -16,6 +16,12 @@
         margin-right: 46px;
         }
 
+    @media screen and (min-width: 768px) {
+        &__list > li:not(:last-child) {
+            margin-right: 60px;
+            }
+    }
+
     &__list .active::after {
         content: "";
         position: absolute;
@@ -58,6 +64,12 @@
             @extend .nav__menu-link;
             position: relative;
             color: $active-color;
+            }
+
+        @media screen and (min-width: 768px) {
+            &-current {
+                margin-left: 83px;
+                }
             }
         }
 }
