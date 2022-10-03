@@ -49,15 +49,17 @@
                 </p>
             </div>
 
-            <button class="mobile-menu menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
-                <svg class="mobile-menu__icon">
+        <!-- <div class="menu-container"> -->
+            <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+                <svg class="mobile-icon">
                     <use
                     href="./images/icons.svg#icon-menu_24px"
                     width="24"
                     height="16">
-                </use>
+                    </use>
                 </svg>
             </button>
+        </div>
             
         </div>
     </header>
@@ -67,7 +69,7 @@
     <!-- <div class="menu-container js-menu-container" id="mobile-menu">
 
         <button class="menu-toggle js-close-menu">
-            <svg>
+            <svg class="mobile-icon">
                 <use
                 href="./images/icons.svg#icon-close_24px"
                 width="18.67"
@@ -76,10 +78,10 @@
             </svg>
         </button>
 
-        <ul class="mobile-list">
-            <li class="mobile-list__name"><a href="index.html" class="mobile-list__link--current">Agencja</a></li>
-            <li class="mobile-list__name"><a href="portfolio.html" class="mobile-list__link">Portfolio</a></li>
-            <li class="mobile-list__name"><a href="" class="mobile-list__link">Kontakt</a></li>
+        <ul class="mobile-menu">
+            <li class="mobile-menu__name"><a href="index.html" class="mobile-menu__link--current">Agencja</a></li>
+            <li class="mobile-menu__name"><a href="portfolio.html" class="mobile-menu__link">Portfolio</a></li>
+            <li class="mobile-menu__name"><a href="" class="mobile-menu__link">Kontakt</a></li>
         </ul>
 
         <div>
@@ -201,8 +203,6 @@
                         href="./images/icons.svg#icon-antenna-1"
                         width="70"
                         height="70"
-                        x="100"
-                        y="25"
                         >
                         </use>
                     </svg>
@@ -217,8 +217,6 @@
                         href="./images/icons.svg#icon-clock-1"
                         width="70"
                         height="70"
-                        x="100"
-                        y="25"
                         >
                         </use>
                     </svg>
@@ -232,8 +230,6 @@
                         href="./images/icons.svg#icon-diagram-1"
                         width="70"
                         height="70"
-                        x="100"
-                        y="25"
                         >
                         </use>
                     </svg>
@@ -247,8 +243,6 @@
                         href="./images/icons.svg#icon-astronaut-1"
                         width="70"
                         height="70"
-                        x="100"
-                        y="25"
                         >
                         </use>
                     </svg>
@@ -698,6 +692,6 @@
 </footer>
 
 <script src="./js/modal.js"></script>
-<script src="./js/mobile-menu.js"></script>
+<script defer src="./js/mobile-menu.js"></script>
 </body>
 </html>

@@ -2,10 +2,15 @@
     display: flex;
     align-items: center;
 
-    // @media screen and (min-width: 768px) {
-    //     
-    //         
-    //     }
+    &__list {
+        display: none;
+        }
+
+    @media screen and (min-width: 768px) {
+        &__list {
+            display: flex;
+            } 
+        }
 
     &__list > li:not(:last-child) {
         margin-right: 46px;
@@ -23,11 +28,11 @@
         display: block;
         }
 
-    & ul {
-        display: flex;
-        align-items: center;
-        position: relative;
-        }
+    // & ul {
+    //     display: flex;
+    //     align-items: center;
+    //     position: relative;
+    //     }
 
     &__menu-link {
         font-weight: 500;

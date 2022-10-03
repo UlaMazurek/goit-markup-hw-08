@@ -160,6 +160,8 @@ img {
 /*Header*/
 .header {
   border-bottom: 1px solid #ECECEC;
+  width: 480px;
+  height: 60px;
 }
 .header__container {
   -webkit-box-align: center;
@@ -168,7 +170,6 @@ img {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  height: 80px;
 }
 
 .nav {
@@ -178,6 +179,16 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+.nav__list {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .nav__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 .nav__list > li:not(:last-child) {
   margin-right: 46px;
@@ -192,15 +203,6 @@ img {
   background-color: #2196F3;
   border-radius: 2px;
   display: block;
-}
-.nav ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  position: relative;
 }
 .nav__menu-link, .nav__menu-link-current {
   font-weight: 500;
@@ -228,28 +230,39 @@ img {
 .logo, .footer__logo, .logo__header {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
-  font-size: 26px;
+  font-size: 24px;
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-decoration: none;
 }
 .logo__header {
   color: #212121;
-  margin-right: 93px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-top: 24px;
-  padding-bottom: 24px;
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
 .logo--blue {
   color: #2196F3;
 }
 
 .contact {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .contact .contact {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
 }
 .contact p:not(:last-child) {
   margin-right: 50px;
@@ -284,14 +297,34 @@ img {
   fill: currentColor;
 }
 
+.menu-toggle {
+  background-color: #FFFFFF;
+  border: none;
+  cursor: pointer;
+  position: fixed;
+  top: 22px;
+  right: 23px;
+  width: 40px;
+  height: 40px;
+}
+.menu-toggle:hover {
+  fill: #2196F3;
+}
+
+@media screen and (min-width: 768px) {
+  .menu-toggle {
+    display: none;
+  }
+}
 /*Main text section*/
 .text {
   background-color: #2F303A;
   text-align: center;
-  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../images/back-photo.jpg);
-  background-image: linear-gradient(0deg, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 100%), url(../../images/back-photo.jpg);
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../images/header-img.jpg);
+  background-image: linear-gradient(0deg, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 100%), url(../../images/header-img.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-size: 480px;
   background-position: center;
   -webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
@@ -586,7 +619,6 @@ img {
           justify-content: center;
   -ms-flex-line-pack: center;
       align-content: center;
-  margin: 0 auto;
 }
 .asset__list > li {
   -webkit-box-pack: center;
@@ -608,6 +640,7 @@ img {
   background-color: #F5F4FA;
   margin-bottom: 30px;
   border-radius: 4px;
+  padding: 25px 190px;
 }
 .asset__title {
   font-weight: 700;
