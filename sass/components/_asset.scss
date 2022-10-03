@@ -13,6 +13,11 @@
         align-content: center;
         margin: 0 auto;
 
+        & > li {
+            justify-content: center;
+            align-content: center;
+        }
+
         // & > svg {
             // justify-content: center;
             // align-content: center;
@@ -23,6 +28,12 @@
 
     &__element {
         flex-basis: calc((100% - 90px) / 4);
+
+        &:not(:last-child) {
+            padding-bottom: 30px;
+            }
+       
+       
 
         // & svg {
         //     justify-content: center;
@@ -37,6 +48,8 @@
         background-color: $team-bg-color;
         margin-bottom: 30px;
         border-radius: 4px;
+        // padding-left: 190px;
+        
 
         // & svg {
         //     justify-content: center;
@@ -52,6 +65,7 @@
         line-height: $main-line-height;
         letter-spacing: $main-letter-spacing;
         margin-bottom: 10px;
+        text-align: center;
         }
     
     &__description {
@@ -59,6 +73,7 @@
         font-size: $main-font-size;
         line-height: $big-line-height;
         letter-spacing: $main-letter-spacing;
-        width: 270px;
+        // width: 270px;
+        width: 450px;
         }
 }
