@@ -13,11 +13,11 @@ body {
     line-height: 1.71;
     }
 
-// @media screen and (min-width: 320px) {
-//     body {
-//         overflow-x: hidden;
-//         }
-//     }
+@media screen and (min-width: 320px) {
+    body {
+        overflow-x: hidden;
+        }
+    }
 
 .container {
     display: flex;
