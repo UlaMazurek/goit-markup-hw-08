@@ -11,6 +11,9 @@
     background-position: center;
     box-shadow: $main-shadow;
     position: relative;
+    height: 400px;
+    min-width: 320px;
+    max-width: 1600px;
     // width: 480px;
 
     @media screen and (min-width: 768px) {
@@ -18,6 +21,9 @@
             width: 768px;
             }
         }
+
+        // jak poprawić zdjęcie?
+
 
     &__container {
         flex-direction: column;

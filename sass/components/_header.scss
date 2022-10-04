@@ -1,7 +1,7 @@
 .header {
     border-bottom: 1px solid $border-header-color;
     width: 480px;
-    height: 60px;
+    // height: 60px;
 
     @media screen and (min-width: 768px) {
         .header {
@@ -12,6 +12,8 @@
     &__container {
     align-items: center; 
     justify-content: space-between;
-    // height: 80px;
+    height: 80px;
     }
+
+    
 }
