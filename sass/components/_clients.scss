@@ -5,7 +5,12 @@
     //     padding-bottom: $section-padding-bottom;
         width: 450px;
         padding: 0;
-        
+        }
+
+        @media screen and (min-width: 768px) {
+            & {
+                width: 738px;
+            }
         }
     
     &__title {
@@ -26,11 +31,9 @@
         flex-wrap: wrap;
         flex-direction: row;
         justify-content: center;
-        
 	    gap: 30px;
 
         & > li {
-            // flex-basis: calc(100% / 2);
             width: 210px;
             height: 92px;
 
@@ -47,6 +50,13 @@
             // &:not(:last-child) {
             //     padding-bottom: 30px;
             //     }
+            @media screen and (min-width: 768px) {
+                &__list > li {
+                    width: 738px;
+                    flex-basis: calc(100% / 3);
+                }
+            }
+            
             }
         }
 
@@ -61,6 +71,12 @@
         cursor: pointer;
         width: 210px;
         height: 92px;
+
+        @media screen and (min-width: 768px) {
+            &__link svg {
+                width: 226px;
+            }
+        }
         
         }
 

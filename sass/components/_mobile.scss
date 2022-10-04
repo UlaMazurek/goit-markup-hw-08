@@ -46,6 +46,9 @@
     padding: 48px 40px;
     transform: translateX(100%);
     transition: transform 250ms ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     }
 
 @media screen and (min-width: 768px) {
@@ -88,13 +91,19 @@
 }
 
 .mobile-contact {
+    display: flex;
+    flex-direction: column;
+
+    &__list > li:not(:last-child) {
+        margin-bottom: 32px;
+        }
 
     &__link--active {
         font-weight: 500;
         font-size: 34px;
         line-height: $main-line-height;
         letter-spacing: $small-letter-spacing;
-        padding-bottom: 32px;
+        // padding-bottom: 32px;
         color: $active-color;
         text-decoration: none;
         // height: 40px;

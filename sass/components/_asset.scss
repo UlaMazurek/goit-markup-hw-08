@@ -1,5 +1,5 @@
 .asset {
-    // padding-top: $section-padding-top;
+    padding-top: $mobile-section-padding;
     // padding-bottom: $section-padding-bottom;
 
     &__list {
@@ -10,8 +10,7 @@
         width: 1170px;
         flex-direction: row;
         justify-content: center;
-        align-content: center;
-        
+        align-content: center;  
 
         & > li {
             justify-content: center;
