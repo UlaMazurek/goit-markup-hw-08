@@ -1078,7 +1078,7 @@ img {
 /*Footer*/
 .footer {
   background-color: #2F303A;
-  width: 480px;
+  width: 100%;
 }
 .footer__container {
   display: -webkit-box;
