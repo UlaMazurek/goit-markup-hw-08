@@ -93,20 +93,12 @@
 .mobile-contact {
     display: flex;
     flex-direction: column;
+    padding: 0;
+    margin: 0;
+    list-style: none;
 
     &__list > li:not(:last-child) {
         margin-bottom: 32px;
-        }
-
-    &__link--active {
-        font-weight: 500;
-        font-size: 34px;
-        line-height: $main-line-height;
-        letter-spacing: $small-letter-spacing;
-        // padding-bottom: 32px;
-        color: $active-color;
-        text-decoration: none;
-        // height: 40px;
         }
 
     &__link {
@@ -117,7 +109,23 @@
         text-decoration: none;
         color: $modal-label-color;
         padding-bottom: 64px;
-        }
+        display: block;
+
+        &--active {
+            font-weight: 500;
+            font-size: 34px;
+            line-height: $main-line-height;
+            letter-spacing: $small-letter-spacing;
+            padding-bottom: 32px;
+            color: $active-color;
+            text-decoration: none;
+            display: block;
+            }
+
+        &:hover {
+            color: $active-color;
+            }
+    }
 }
 
 .mobile-pages {
