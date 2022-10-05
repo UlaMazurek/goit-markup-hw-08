@@ -1,19 +1,23 @@
 .header {
     border-bottom: 1px solid $border-header-color;
     width: 480px;
+    height: 100%;
     // height: 60px;
 
     @media screen and (min-width: 768px) {
         .header {
             width: 768px;
+            // height: 80px;
             }
         }
 
     &__container {
     align-items: center; 
     justify-content: space-between;
-    height: 80px;
+    // height: 80px;
+    height: 100%;
     }
-
-    
 }
+
+
+// jak zrobić, żeby dolne obramowanie nie zanikało w połowie?
