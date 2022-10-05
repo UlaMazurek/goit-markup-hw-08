@@ -15,27 +15,25 @@
             }
         }
 
+    @media screen and (min-width: 1200px) {
+        & {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 50px;
+            margin-top: 32px;
+            margin-bottom: 32px;
+            }
+        }
 
-    // @media screen and (min-width: 1200px) {
-    //     .contact {
-    //     display: flex;
-    //     flex-direction: row;
-    //     align-items: center;
-    //     gap: 50px;
-    //     }
-    // }
-
-    // & p:not(:last-child) {
-    //     margin-right: 50px;
-    //     }
 
         // & p:not(:last-child) {
         //     padding-bottom: 10px;
         //     }
 
     
-    &__link {font-weight: 500;
-        // font-size: $main-font-size;
+    &__link {
+        font-weight: 500;
         font-size: 12px;
         line-height: $main-line-height;
         text-align: right;
@@ -55,24 +53,12 @@
             color: $active-color;
             }
 
-        // @media screen and (min-width: 768px) {
-        //     &__last {
-        //         margin-bottom: 21px;
-        //         }
-        //     }
+        @media screen and (min-width: 1200px) {
+            & {
+                font-size: $main-font-size;
+                }
+            }
         }
-
-        // @media screen and (min-width: 768px) {
-        //     &__last {
-        //         margin-bottom: 21px;
-        //         }
-        //     }
-
-        //     @media screen and (min-width: 768px) {
-        //         &__first {
-        //             margin-top: 21px;
-        //             }
-        //         }
 
     &__icon {
         width: 16px;
@@ -89,5 +75,5 @@
     display: none;
 }
 
-// jak wyrównać ikony?
+// jak wyrównać ikony przy 768px?
 

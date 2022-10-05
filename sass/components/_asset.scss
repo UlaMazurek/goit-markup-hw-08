@@ -3,6 +3,13 @@
     padding-bottom: 0;
     // padding-bottom: $section-padding-bottom;
 
+    @media screen and (min-width: 1200px) {
+        & {
+            padding-top: $section-padding-top;
+            padding-bottom: $section-padding-bottom;
+            }
+        }
+
     &__list {
         display: flex;
         flex-wrap: wrap;
@@ -34,21 +41,27 @@
     // }
 
     &__logo {
-        // width: 270px;
         width: 450px;
         height: 120px;
         background-color: $team-bg-color;
         margin-bottom: 30px;
         border-radius: 4px;
         padding: 25px 190px;
-        }
-    
-    @media screen and (min-width: 768px) {
-        &__logo {
-            width: 354px;
-            padding: 25px 142px;
+
+        @media screen and (min-width: 768px) {
+            & {
+                width: 354px;
+                padding: 25px 142px;
+                }
             }
-        }
+
+        @media screen and (min-width: 1200px) {
+            & {
+                width: 270px;
+                padding: 25px 100px;
+                }
+            }  
+    } 
 
     &__title {
         font-weight: 700;
@@ -62,21 +75,26 @@
     @media screen and (min-width: 768px) {
         &__title {
             text-align: left;
+            }
         }
-    }
     
     &__description {
         color: $header-contact-color;
         font-size: $main-font-size;
         line-height: $big-line-height;
         letter-spacing: $main-letter-spacing;
-        // width: 270px;
         width: 450px;
-        }
 
-    @media screen and (min-width: 768px) {
-        &__description {
-            width: 354px;
+        @media screen and (min-width: 768px) {
+            & {
+                width: 354px;
+                }
+            }
+
+        @media screen and (min-width: 1200px) {
+            &  {
+                width: 270px;
+                }
             }
         }
 }
