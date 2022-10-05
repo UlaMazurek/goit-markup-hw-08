@@ -7,13 +7,6 @@
     justify-content: center;
     text-align: center;
 
-    @media screen and (min-width: 768px) {
-        & {
-        //    padding-left: 61px;
-        //    padding-right: 144px;
-            }
-        }
-
     &__list {
         flex-direction: column;
 
