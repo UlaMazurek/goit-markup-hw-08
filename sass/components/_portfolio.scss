@@ -1,13 +1,20 @@
 .portfolio {
     text-align: center;
     display: flex;
-    width: 480px;
+    width: 100%;
 
     &__container {
         // padding-top:$mobile-section-padding;
         // padding-bottom: $mobile-section-padding;
         width: 480px;
-        }
+
+        @media screen and (min-width: 768px) {
+            & {
+                width: 768px;
+                }
+            }
+        }   
+            
 
     &__filters {
         display: flex;
@@ -36,6 +43,11 @@
         // & > li:nth-child(3n + 2) {
         //     width: 128px;
         // }
+        @media screen and (min-width: 768px) {
+            & {
+                margin-bottom: 30px;
+                }
+            }
         }
 
     &__button {
@@ -77,6 +89,7 @@
         text-align: left;
         // width: 370px;
         width: 450px;
+        height: 404px;
         transition: box-shadow $main-animation;
 
         &:hover,
@@ -88,12 +101,25 @@
         &:hover .portfolio__overlay {
             transform: translateY(0%);
             }
+        
+        @media screen and (min-width: 768px) {
+            & {
+                width: 354px;
+                height: 440px;
+                }
+            }
         }
 
     &__card-all {
         position: relative;
         overflow: hidden;
         transition: box-shadow $main-animation;
+
+        @media screen and (min-width: 768px) {
+            & {
+                height: 294px;
+                }
+            }
         }
 
     &__overlay {

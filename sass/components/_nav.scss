@@ -65,11 +65,11 @@
             position: relative;
             color: $active-color;
             }
-
-        @media screen and (min-width: 768px) {
-            &-current {
-                margin-left: 83px;
-                }
-            }
         }
-}
+    }
+
+        // @media screen and (min-width: 768px) {
+        //     &-current {
+        //         margin-left: 83px;
+        //         }
+        //     }
