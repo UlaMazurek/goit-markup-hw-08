@@ -7,6 +7,11 @@
     height: 622px;
     box-shadow: $team-shadow;
 
+    & > img {
+        width: 100%;
+        height: auto;
+        }
+
     &__name { 
         font-weight: 500;
         font-size: $title-font-size;
