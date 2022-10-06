@@ -540,9 +540,15 @@ img {
   max-width: 1600px;
   margin: 0 auto;
 }
+@media screen and (min-width: 768px) {
+  .text {
+    width: 768px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .text {
     height: 600px;
+    width: 1200px;
   }
 }
 .text__container {
@@ -552,7 +558,7 @@ img {
           flex-direction: column;
   padding-top: 118px;
   padding-bottom: 118px;
-  width: 480px;
+  width: 100%;
 }
 .text__title {
   font-weight: 900;
