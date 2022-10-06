@@ -47,12 +47,14 @@ body {
 
 @media screen and (min-width: 768px) {
   .container {
-    width: 768px;
+    width: 100%;
+    max-width: 1199px;
   }
 }
 @media screen and (min-width: 1200px) {
   .container {
-    width: 1200px;
+    width: 100%;
+    max-width: 1600px;
   }
 }
 h1, h2, h3, h4, p, ul {
@@ -161,7 +163,7 @@ img {
 /*Header*/
 .header {
   border-bottom: 1px solid #ECECEC;
-  width: 480px;
+  width: 100%;
   height: 100%;
   margin: auto;
 }
@@ -405,7 +407,8 @@ img {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100vw;
+  width: 100%;
+  max-width: 480px;
   height: 100vh;
   z-index: 999;
   padding: 48px 40px;
@@ -524,8 +527,8 @@ img {
 .text {
   background-color: #2F303A;
   text-align: center;
-  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../images/header-img.jpg);
-  background-image: linear-gradient(0deg, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 100%), url(../../images/header-img.jpg);
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../images/header-img@2x.jpg);
+  background-image: linear-gradient(0deg, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 100%), url(../../images/header-img@2x.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -535,17 +538,11 @@ img {
   height: 400px;
   min-width: 320px;
   max-width: 1600px;
-  margin: auto;
-}
-@media screen and (min-width: 768px) {
-  .text {
-    width: 768px;
-  }
+  margin: 0 auto;
 }
 @media screen and (min-width: 1200px) {
   .text {
     height: 600px;
-    width: 1200px;
   }
 }
 .text__container {

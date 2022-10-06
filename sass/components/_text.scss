@@ -5,7 +5,7 @@
         0deg,
         rgba(47, 48, 58, 0.4) 0%,
         rgba(47, 48, 58, 0.4) 100%),
-        url(../../images/header-img.jpg);
+        url(../../images/header-img@2x.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -14,19 +14,23 @@
     height: 400px;
     min-width: 320px;
     max-width: 1600px;
-    margin: auto;
+    margin: 0 auto;
     // width: 480px;
 
-    @media screen and (min-width: 768px) {
-        & {
-            width: 768px;
-            }
-        }
+    // @media screen and (min-width: 768px) {
+    //     & {
+    //         // width: 100%;
+    //         // max-width: 1199px;
+            
+    //         }
+    //     }
     
     @media screen and (min-width: 1200px) {
         & {
             height: 600px;
-            width: 1200px;
+            width: 768px;
+            // width: 100%;
+            // max-width: 1600px;
             }
         }
 
@@ -41,11 +45,13 @@
         // padding-bottom: 200px;
         padding-bottom: 118px;
         width: 480px;
+        // max-width: 767px;
         }
 
     // @media screen and (min-width: 768px) {
     //     .text__container {
-    //         width: 768px;
+    //         width: 100%;
+    //         max-width: 1199px;
     //         }
     //     }
 
