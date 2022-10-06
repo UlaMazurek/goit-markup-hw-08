@@ -29,10 +29,12 @@
         & > li {
             background-color: $main-bg-color;
             // width: 270px;
-            width: 450px;
-            // height: 428px;
-            height: 622px;
+            // width: 450px;
+            // // height: 428px;
+            // height: 622px;
             // margin-bottom: 30px;
+            width: 100%;
+            height: auto;
             }
         
         & > li:not(:last-child) {

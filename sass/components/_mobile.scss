@@ -130,6 +130,9 @@
 
 .mobile-pages {
     display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 480px;
 
     & > li:not(:last-child) {
         margin-right: 20px;
@@ -142,5 +145,6 @@
         font-size: 18px;
         line-height: 1.22;
         letter-spacing: $small-letter-spacing;
-    }
+        flex-wrap: wrap;
+        }
 }

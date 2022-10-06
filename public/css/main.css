@@ -163,6 +163,7 @@ img {
   border-bottom: 1px solid #ECECEC;
   width: 480px;
   height: 100%;
+  margin: auto;
 }
 @media screen and (min-width: 768px) {
   .header {
@@ -500,6 +501,10 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  max-width: 480px;
 }
 .mobile-pages > li:not(:last-child) {
   margin-right: 20px;
@@ -511,6 +516,8 @@ img {
   font-size: 18px;
   line-height: 1.22;
   letter-spacing: 0.02em;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 /*Main text section*/
@@ -528,6 +535,7 @@ img {
   height: 400px;
   min-width: 320px;
   max-width: 1600px;
+  margin: auto;
 }
 @media screen and (min-width: 768px) {
   .text {
@@ -559,8 +567,6 @@ img {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 30px;
-  width: 365px;
-  height: 84px;
 }
 .text__button {
   font-family: "Roboto", sans-serif;
@@ -996,8 +1002,8 @@ img {
 }
 .team__list > li {
   background-color: #FFFFFF;
-  width: 450px;
-  height: 622px;
+  width: 100%;
+  height: auto;
 }
 .team__list > li:not(:last-child) {
   margin-bottom: 30px;
@@ -1070,8 +1076,8 @@ img {
 
 /*Clients section*/
 .clients__container {
-  width: 450px;
   padding: 0;
+  width: 100%;
 }
 @media screen and (min-width: 768px) {
   .clients__container {
