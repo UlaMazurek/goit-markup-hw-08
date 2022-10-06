@@ -408,7 +408,6 @@ img {
   top: 0;
   left: 0;
   width: 100%;
-  max-width: 480px;
   height: 100vh;
   z-index: 999;
   padding: 48px 40px;
@@ -539,16 +538,17 @@ img {
   min-width: 320px;
   max-width: 1600px;
   margin: 0 auto;
+  width: 100%;
 }
 @media screen and (min-width: 768px) {
   .text {
-    width: 768px;
+    max-width: 1199px;
   }
 }
 @media screen and (min-width: 1200px) {
   .text {
     height: 600px;
-    width: 1200px;
+    max-width: 1600px;
   }
 }
 .text__container {
@@ -558,7 +558,7 @@ img {
           flex-direction: column;
   padding-top: 118px;
   padding-bottom: 118px;
-  width: 100%;
+  max-width: 480px;
 }
 .text__title {
   font-weight: 900;
@@ -570,6 +570,14 @@ img {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 30px;
+}
+@media screen and (min-width: 1200px) {
+  .text__title {
+    font-size: 44px;
+    line-height: 1.36;
+    width: 696px;
+    height: 120px;
+  }
 }
 .text__button {
   font-family: "Roboto", sans-serif;
@@ -832,7 +840,7 @@ img {
      -moz-column-gap: 30px;
           column-gap: 30px;
   padding: 0;
-  width: 1170px;
+  width: 100%;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -858,7 +866,7 @@ img {
   padding-bottom: 30px;
 }
 .asset__logo {
-  width: 450px;
+  width: 100%;
   height: 120px;
   background-color: #F5F4FA;
   margin-bottom: 30px;
