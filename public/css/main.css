@@ -999,6 +999,10 @@ img {
 .team {
   background-color: #F5F4FA;
   text-align: center;
+  width: 100%;
+}
+.team__container {
+  width: 100%;
 }
 .team__title {
   font-weight: 700;

@@ -1,11 +1,16 @@
 .team {
     background-color: $team-bg-color;
     text-align: center;
+    width: 100%;
 
     // &__container {
     //     padding-top: 94px;
     //     padding-bottom: 94px;
     //     }
+
+    &__container {
+        width: 100%;
+        }
 
     &__title {
         font-weight: 700;
