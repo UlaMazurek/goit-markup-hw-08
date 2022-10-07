@@ -6,9 +6,11 @@
     display: flex;
     justify-content: center;
     text-align: center;
+   
 
     &__list {
         flex-direction: column;
+       
 
         & > li:not(:last-child) {
             // margin-bottom: 9px;

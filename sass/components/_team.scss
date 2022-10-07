@@ -30,6 +30,8 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+        margin: 0 auto;
+        gap: 30px;
 
         & > li {
             background-color: $main-bg-color;
@@ -42,23 +44,32 @@
             height: auto;
             }
         
-        & > li:not(:last-child) {
-            margin-bottom: 30px;
-            }
+        // & > li:not(:last-child) {
+        //     margin-bottom: 30px;
+        //     }
 
         & img {
             margin-bottom: 30px;
             }
-    }  
+
+        @media screen and (min-width: 768px) {
+            & {
+                width: 100%;
+                flex-direction: row;
+                }
+            } 
+        }  
 
     @media screen and (min-width: 768px) {
          &__list > li {
-            width: 354px;
-            height: 536px;
+            // width: 354px;
+            // height: 536px;
+            width: calc((100% - 30px)/2);
 
-            &:nth-child(2n + 1) {
-                margin-right: 30px;
-                }
-            }
+            // &:nth-child(2n + 1) {
+            //     margin-right: 30px;
+            //     }
+            // }
     }
+}
 }
