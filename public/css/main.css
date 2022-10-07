@@ -165,7 +165,7 @@ img {
   border-bottom: 1px solid #ECECEC;
   width: 100%;
   height: 100%;
-  margin: auto;
+  margin: 0 auto;
 }
 @media screen and (min-width: 768px) {
   .header {
@@ -858,12 +858,20 @@ img {
   -ms-flex-line-pack: center;
       align-content: center;
 }
-.asset__element {
-  -ms-flex-preferred-size: calc((100% - 90px) / 4);
-      flex-basis: calc((100% - 90px) / 4);
-}
 .asset__element:not(:last-child) {
   padding-bottom: 30px;
+}
+@media screen and (min-width: 768px) {
+  .asset__element {
+    -ms-flex-preferred-size: calc((100% - 60px) / 2);
+        flex-basis: calc((100% - 60px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .asset__element {
+    -ms-flex-preferred-size: calc((100% - 90px) / 4);
+        flex-basis: calc((100% - 90px) / 4);
+  }
 }
 .asset__logo {
   width: 100%;
@@ -875,13 +883,15 @@ img {
 }
 @media screen and (min-width: 768px) {
   .asset__logo {
-    width: 354px;
+    width: 100%;
+    max-width: 354px;
     padding: 25px 142px;
   }
 }
 @media screen and (min-width: 1200px) {
   .asset__logo {
-    width: 270px;
+    width: 100%;
+    max-width: 270px;
     padding: 25px 100px;
   }
 }
@@ -907,12 +917,14 @@ img {
 }
 @media screen and (min-width: 768px) {
   .asset__description {
-    width: 354px;
+    width: 100%;
+    max-width: 354px;
   }
 }
 @media screen and (min-width: 1200px) {
   .asset__description {
-    width: 270px;
+    width: 100%;
+    max-width: 270px;
   }
 }
 
