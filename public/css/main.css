@@ -836,30 +836,19 @@ img {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-column-gap: 30px;
-     -moz-column-gap: 30px;
-          column-gap: 30px;
-  padding: 0;
-  width: 100%;
-  -webkit-box-orient: horizontal;
+  gap: 30px;
+}
+.asset__element {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
-}
-.asset__list > li {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
-}
-.asset__element:not(:last-child) {
-  padding-bottom: 30px;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 @media screen and (min-width: 768px) {
   .asset__element {
@@ -880,20 +869,15 @@ img {
   margin-bottom: 30px;
   border-radius: 4px;
   padding: 25px 190px;
-}
-@media screen and (min-width: 768px) {
-  .asset__logo {
-    width: 100%;
-    max-width: 354px;
-    padding: 25px 142px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .asset__logo {
-    width: 100%;
-    max-width: 270px;
-    padding: 25px 100px;
-  }
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .asset__title {
   font-weight: 700;
@@ -903,29 +887,12 @@ img {
   margin-bottom: 10px;
   text-align: center;
 }
-@media screen and (min-width: 768px) {
-  .asset__title {
-    text-align: left;
-  }
-}
 .asset__description {
   color: #757575;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  width: 450px;
-}
-@media screen and (min-width: 768px) {
-  .asset__description {
-    width: 100%;
-    max-width: 354px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .asset__description {
-    width: 100%;
-    max-width: 270px;
-  }
+  width: 100%;
 }
 
 /*Scope section*/
