@@ -159,14 +159,8 @@ img {
   height: 100%;
   margin: 0 auto;
 }
-@media screen and (min-width: 768px) {
-  .header {
-    width: 768px;
-  }
-}
 @media screen and (min-width: 1200px) {
   .header {
-    width: 1200px;
     height: 80px;
   }
 }
@@ -178,6 +172,7 @@ img {
       -ms-flex-pack: justify;
           justify-content: space-between;
   height: 100%;
+  margin: 0;
 }
 
 .nav {
@@ -264,6 +259,7 @@ img {
 @media screen and (min-width: 768px) {
   .logo__header {
     margin-right: 83px;
+    padding-left: 15px;
     padding-top: 26px;
     padding-bottom: 26px;
   }
