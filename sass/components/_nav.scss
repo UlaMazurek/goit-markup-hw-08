@@ -32,6 +32,12 @@
         background-color: $active-color;
         border-radius: 2px;
         display: block;
+
+        @media screen and (min-width: 1200px) {
+            & {
+                bottom: 1px;
+                }
+            }
         }
 
     // & ul {

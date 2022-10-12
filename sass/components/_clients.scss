@@ -1,30 +1,15 @@
 .clients {
 
-    &__container {
-        width: 100%;
-    }
-
-    & > li {
-
-        flex-basis: calc((100% - 30px)/2);
-
-        @media screen and (min-width: 768px) {
-        & {
-            width: calc((100% - 60px)/3);
-            }
-        }
-
-        @media screen and (min-width: 1200px) {
-        & {
-            width:calc((100% - 150px)/6);
-            }
-        }
-    }
+    // &__container {
+    //     padding-top: $section-padding-top;
+    //     padding-bottom: $section-padding-bottom;
+    //     }
+    
 
     &__title {
         font-weight: 700;
-        // font-size: $second-header-font-size;
         font-size: 28px;
+        // font-size: $second-header-font-size;
         line-height: $main-line-height;
         letter-spacing: $main-letter-spacing;
         text-align: center;
@@ -32,7 +17,7 @@
         margin-right: auto;
         // margin-bottom: 50px;
         margin-bottom: 30px;
-        width: 100%;
+        display: flex;
         justify-content: center;
 
         @media screen and (min-width: 1200px) {
@@ -46,183 +31,60 @@
     &__list {
         display: flex;
         flex-wrap: wrap;
-        // flex-direction: row;
         justify-content: center;
         gap: 30px;
-        // width: 100%;
+        }
+
+    & li {
+        width: calc((100% - 60px) / 2);
+
+        @media screen and (min-width: 768px) {
+            & {
+                width: calc((100% - 90px) / 3);
+                }
+            }
 
         @media screen and (min-width: 1200px) {
             & {
-                flex-direction: row;
-                display: flex;
-                flex-wrap: nowrap;
+                width: calc((100% - 150px) / 6);
                 }
             }
         }
 
-    &__link {
-        display: flex;
-        // width: 100%;
-        width: 210px;
+    &__link svg {
+        transition: fill $main-animation,
+        border-color $main-animation;
+        // width: 170px;
+        width: 100%;
         height: 92px;
         border: 1px solid $border-client-color;
         border-radius: 4px;
-        color: $border-client-color;
-        transition: color $main-animation;
-
-        &:hover,
-        &:focus {
-        fill: $active-color;
-        border-color: $active-color;
-            }
+        fill: $border-client-color;
+        cursor: pointer;
+        display: flex;
 
         @media screen and (min-width: 768px) {
             & {
-                width: 226px;
+                width: 100%;
+                display: flex;
                 }
             }
+        }
 
-        @media screen and (min-width: 1200px) {
-            & {
-                width: 170px;
-                }
-            }
-        }  
+    &__link:hover svg,
+    &__link:focus svg {
+        fill: $active-color;
+        border-color: $active-color;
+        }
 
     &__logo {
         width: 106px;
         height: 60px;
-        margin: 16px auto;
-        fill: currentColor;
-        transition: $main-animation;
+        margin: auto;
+        display: flex;
 
-        &:hover,
-        &:focus {
-        fill: $active-color;
-        border-color: $active-color;
-            }
+        & use {
+          display: contents;
         }
+      }
 }
-
-    // &__container {
-    // //     padding-top: $section-padding-top;
-    // //     padding-bottom: $section-padding-bottom;
-    //     // width: 450px;
-    //     padding: 0;
-    //     width: 100%;
-    //     }
-
-        // @media screen and (min-width: 768px) {
-        //     &__container {
-        //         width: 738px;
-        //         }
-        // }
-    
-    // &__title {
-    //     font-weight: 700;
-    //     // font-size: $second-header-font-size;
-    //     font-size: 28px;
-    //     line-height: $main-line-height;
-    //     letter-spacing: $main-letter-spacing;
-    //     text-align: center;
-    //     margin-left: auto;
-    //     margin-right: auto;
-    //     margin-bottom: 50px;
-    //     margin-bottom: 30px;
-    //     }
-
-    // &__list {
-    //     display: flex;
-    //     flex-wrap: wrap;
-    //     flex-direction: row;
-    //     justify-content: center;
-	//     gap: 30px;
-
-    //     & > li {
-    //         // width: 210px;
-    //         // width: 100%;
-    //         // height: 92px;
-    //         width: calc((100% - 60px)/2);
-
-
-    //         @media screen and (min-width: 768px) {
-    //             & {
-    //                 width: calc((100% - 90px)/3);
-    //             }
-    //             }
-    //         }
-    //     }
-
-    // &__link svg {
-    //     transition: fill $main-animation,
-    //     border-color $main-animation;
-    //     // width: 170px;
-    //     // height: 92px;
-    //     border: 1px solid $border-client-color;
-    //     border-radius: 4px;
-    //     fill: $border-client-color;
-    //     cursor: pointer;
-    //     // width: 210px;
-    //     width: 100%;
-    //     height: 92px;
-    //     display: flex;
-
-//         &__logo {
-//             // padding: 16px 52px;
-//             margin: 0 auto;
-//             width: 106px;
-//             height: 60px;
-//             display: flex;
-    
-//             & use {
-//                 display: contents;
-//                 }
-
-//         @media screen and (min-width: 768px) {
-//             & {
-//                 width: 100%;
-//                 display: flex;
-//                 }
-//                 }
-//             }
-
-//     &__link:hover svg,
-//     &__link:focus svg {
-//         fill: $active-color;
-//         border-color: $active-color;
-//         }
-
-//     // &__logo {
-//     //     // padding: 16px 52px;
-//     //     margin: 0 auto;
-//     //     width: 106px;
-//     //     height: 60px;
-//     //     display: flex;
-
-//     //     & use {
-//     //         display: contents;
-//     //         }
-
-//         // &--one {
-//         //     padding: 
-//         //     17.71px 32px 14.25px 32px;
-//         //     }
-
-//         // &--two {
-//         //     padding: 16px 32px;
-//         //     }
-//         }
-// }
-
-// @media screen and (min-width: 768px) {
-//     .clients__list > li {
-//         width: 226px;
-//         }
-// }
-
-// @media screen and (min-width: 768px) {
-//     .clients__link svg {
-//         width: 100%;
-//         display: flex;
-//         }
-// }
