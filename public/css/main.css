@@ -594,7 +594,7 @@ img {
 /*Modal*/
 .modal {
   position: absolute;
-  width: 450px;
+  min-width: 450px;
   height: 609px;
   background-color: rgb(255, 255, 255);
   border: 1px solid black;
@@ -666,9 +666,15 @@ img {
   margin-left: 40px;
   color: rgb(117, 117, 117);
 }
+@media screen and (min-width: 320px) and (max-width: 1199px) {
+  .order-form__label {
+    width: 100%;
+    max-width: 370px;
+  }
+}
 .order-form__input {
   width: 370px;
-  height: 40px;
+  min-height: 40px;
   border-radius: 4px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   margin-left: 40px;
@@ -683,6 +689,12 @@ img {
 }
 .order-form__input:focus-within {
   border: 1px solid #2196f3;
+}
+@media screen and (min-width: 320px) and (max-width: 1199px) {
+  .order-form__input {
+    width: 100%;
+    max-width: 370px;
+  }
 }
 .order-form__icon {
   position: absolute;
@@ -860,7 +872,6 @@ img {
   background-color: #F5F4FA;
   margin-bottom: 30px;
   border-radius: 4px;
-  padding: 25px 190px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1076,11 +1087,12 @@ img {
   width: 100%;
 }
 .clients > li {
-  width: calc((100% - 60px) / 2);
+  -ms-flex-preferred-size: calc((100% - 30px) / 2);
+      flex-basis: calc((100% - 30px) / 2);
 }
 @media screen and (min-width: 768px) {
   .clients > li {
-    width: calc((100% - 90px) / 3);
+    width: calc((100% - 60px) / 3);
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1118,6 +1130,19 @@ img {
       -ms-flex-pack: center;
           justify-content: center;
   gap: 30px;
+}
+@media screen and (min-width: 1200px) {
+  .clients__list {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
 }
 .clients__link {
   display: -webkit-box;

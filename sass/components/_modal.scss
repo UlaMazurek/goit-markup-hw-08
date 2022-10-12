@@ -2,7 +2,9 @@
     position: absolute;
     // width: 528px;
     // height: 581px;
-    width: 450px;
+    // max-width: 450px;
+    // width: 100%;
+    min-width: 450px;
     height: 609px;
     background-color: $modal-bg-color;
     border: $main-border-style;
