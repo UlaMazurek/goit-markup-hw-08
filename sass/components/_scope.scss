@@ -2,13 +2,13 @@
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-    display: none;
+    
 
     @media screen and (min-width: 1200px) {
-        .scope {
+        & {
             display: flex;
+            }
         }
-    }
 
     &__title {
         font-weight: 700;
@@ -29,7 +29,7 @@
         padding-bottom: 0;
         padding-right: 0;
         padding-left: 0;
-        padding-bottom: 94px;
+        // padding-bottom: 94px;
 
         & > li {
             position: relative;
@@ -58,4 +58,10 @@
         white-space: nowrap;
         border: none;
         }
+}
+
+@media screen and (max-width: 1200px) {
+    .scope--hidden {
+      display: none;
+    }
 }
