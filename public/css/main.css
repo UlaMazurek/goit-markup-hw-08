@@ -280,6 +280,7 @@ img {
 @media screen and (min-width: 1200px) {
   .logo, .footer__logo, .logo__header {
     margin-right: 93px;
+    text-align: left;
   }
 }
 .logo--blue {
@@ -1064,7 +1065,7 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .team__list > li {
-    width: calc((100% - 30px) / 4);
+    width: 270px;
   }
 }
 
@@ -1271,11 +1272,6 @@ img {
   color: #FFFFFF;
   margin-bottom: 20px;
 }
-@media screen and (min-width: 1200px) {
-  .footer__logo {
-    margin-left: 215px;
-  }
-}
 
 .address {
   -webkit-box-orient: vertical;
@@ -1297,7 +1293,7 @@ img {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
-    margin-right: 70px;
+    text-align: left;
   }
 }
 .address__list {
@@ -1310,11 +1306,17 @@ img {
   margin-bottom: 8px;
 }
 @media screen and (min-width: 1200px) {
+  .address__list > li:not(:last-child) {
+    margin-bottom: 9px;
+  }
+}
+@media screen and (min-width: 1200px) {
   .address__list > li {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
     margin-right: 70px;
+    width: 246px;
   }
 }
 .address__place {
@@ -1387,6 +1389,11 @@ img {
       -ms-flex-pack: center;
           justify-content: center;
   text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .subscription {
+    margin-left: 78px;
+  }
 }
 .subscription__section {
   width: 100%;

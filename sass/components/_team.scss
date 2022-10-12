@@ -82,7 +82,8 @@
 
 @media screen and (min-width: 1200px) {
     &__list > li {
-        width: calc((100% - 30px)/4);
+        // width: calc((100% - 30px)/4);
+        width: 270px;
     }
 }
 }

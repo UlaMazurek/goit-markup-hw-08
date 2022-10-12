@@ -11,7 +11,8 @@
     @media screen and (min-width: 1200px) {
         & {
             justify-content: flex-start;
-            margin-right: 70px;
+            text-align: left;
+            // margin-right: 70px;
             }
         }
    
@@ -23,12 +24,20 @@
         & > li:not(:last-child) {
             // margin-bottom: 9px;
             margin-bottom: 8px;
+
+            @media screen and (min-width: 1200px) {
+                & {
+                    margin-bottom: 9px;
+                    }
+                }
             }
+        
 
         @media screen and (min-width: 1200px) {
             & > li {
                 justify-content: flex-start;
                 margin-right: 70px;
+                width: 246px;
                 }
             }
         }
