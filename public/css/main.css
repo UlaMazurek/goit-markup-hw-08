@@ -569,7 +569,6 @@ img {
           flex-direction: column;
   padding-top: 118px;
   padding-bottom: 118px;
-  max-width: 480px;
 }
 .text__title {
   font-weight: 900;
@@ -581,7 +580,6 @@ img {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 30px;
-  width: 365px;
 }
 @media screen and (min-width: 1200px) {
   .text__title {
