@@ -1,6 +1,4 @@
 .order-form {
-
-    &__all {
     display: flex;
     width: 100%;
     // width: 450px;
@@ -11,7 +9,6 @@
     color: $main-bg-color;
     border: none;
     align-items: center;
-    }
 
     &__title {
         font-weight: 700;
