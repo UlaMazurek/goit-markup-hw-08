@@ -4,12 +4,12 @@
 
     &__list {
         display: none;
-        }
 
-    @media screen and (min-width: 768px) {
-        &__list {
-            display: flex;
-            } 
+        @media screen and (min-width: 768px) {
+            & {
+                display: flex;
+                } 
+            }
         }
 
     &__list > li:not(:last-child) {
@@ -39,12 +39,6 @@
                 }
             }
         }
-
-    // & ul {
-    //     display: flex;
-    //     align-items: center;
-    //     position: relative;
-    //     }
 
     &__menu-link {
         font-weight: 500;

@@ -2,7 +2,6 @@
     background-color: $main-bg-color;
     border: none;
     cursor: pointer;
-    // position: fixed;
     position: absolute;
     top: 0px;
     right: 0px;
@@ -13,16 +12,21 @@
     &:focus {
         fill: $active-color;
         }
-    }
-          
-@media screen and (min-width: 768px) {
-    .menu-toggle {
-        display: none;
+
+    @media screen and (min-width: 768px) {
+        & {
+            display: none;
+            }
         }
     }
+          
+// @media screen and (min-width: 768px) {
+//     .menu-toggle {
+//         display: none;
+//         }
+//     }
 
 .mobile-icon {
-    // position: fixed;
     position: absolute;
     width: 18.67px;
     height: 18.67px;
@@ -40,9 +44,7 @@
     position: fixed;
     top: 0;
     left: 0;
-    // width: 100vw;
     width: 100%;
-    // max-width: 480px;
     height: 100vh;
     z-index: 999;
     padding: 48px 40px;
@@ -51,13 +53,19 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    }
 
-@media screen and (min-width: 768px) {
-    .menu-container {
-        display: none;
+    @media screen and (min-width: 768px) {
+       & {
+            display: none;
+            }
         }
     }
+
+// @media screen and (min-width: 768px) {
+//     .menu-container {
+//         display: none;
+//         }
+//     }
 
 .menu-container.is-open {
     transform: translateX(0);
@@ -81,7 +89,6 @@
         }
 
     &__name {
-
         &:not(:last-child) {
             margin-bottom: 32px;
             }

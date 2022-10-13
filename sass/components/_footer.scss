@@ -1,16 +1,11 @@
 .footer {
     background-color: $footer-bg-color;
     width: 100%;
-    // max-width: 1200px;
-    // width: 480px;
 
     &__container {
         display: flex;
-        // flex-direction: row;
         flex-direction: column;
-        // align-items: baseline;
         align-items: center;
-        // justify-content: flex-start;
         justify-content: center;
         width: 100%;
 
@@ -36,11 +31,5 @@
         @extend .logo;
         color: $main-bg-color;
         margin-bottom: 20px;
-
-        // @media screen and (min-width: 1200px) {
-        //     & {
-        //         margin-left: 215px;
-        //         }
-        //     }
         }
 }

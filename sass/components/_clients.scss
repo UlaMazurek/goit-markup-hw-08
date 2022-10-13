@@ -1,21 +1,13 @@
 .clients {
 
-    // &__container {
-    //     padding-top: $section-padding-top;
-    //     padding-bottom: $section-padding-bottom;
-    //     }
-    
-
     &__title {
         font-weight: 700;
         font-size: 28px;
-        // font-size: $second-header-font-size;
         line-height: $main-line-height;
         letter-spacing: $main-letter-spacing;
         text-align: center;
         margin-left: auto;
         margin-right: auto;
-        // margin-bottom: 50px;
         margin-bottom: 30px;
         display: flex;
         justify-content: center;
@@ -54,7 +46,6 @@
     &__link svg {
         transition: fill $main-animation,
         border-color $main-animation;
-        // width: 170px;
         width: 100%;
         height: 92px;
         border: 1px solid $border-client-color;
@@ -83,9 +74,9 @@
         margin: auto;
         display: flex;
 
-        & use {
-          display: contents;
-        }
+        // & use {
+        //   display: contents;
+        // }
       }
 }
 

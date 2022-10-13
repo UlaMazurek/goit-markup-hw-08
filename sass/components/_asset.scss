@@ -1,7 +1,6 @@
 .asset {
     padding-top: $mobile-section-padding;
     padding-bottom: $mobile-section-padding;
-    // padding-bottom: $section-padding-bottom;
 
     @media screen and (min-width: 768px) {
        & {
@@ -48,13 +47,11 @@
             }
 
         &__logo {
-            // width: 450px;
             width: 100%;
             height: 120px;
             background-color: $team-bg-color;
             margin-bottom: 30px;
             border-radius: 4px;
-            // padding: 25px 190px;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -74,9 +71,6 @@
             font-size: $main-font-size;
             line-height: $big-line-height;
             letter-spacing: $main-letter-spacing;
-            // width: 450px;
             width: 100%;
             }
 }
-
-// jak wyśrodkować ikony?

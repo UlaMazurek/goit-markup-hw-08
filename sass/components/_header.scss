@@ -1,21 +1,11 @@
 .header {
     border-bottom: 1px solid $border-header-color;
-    // width: 480px;
     width: 100%;
     height: 100%;
     margin: 0 auto;
-    // height: 60px;
-
-    // @media screen and (min-width: 768px) {
-    //     & {
-    //         // width: 768px;
-    //         // height: 80px;
-    //         }
-    //     }
 
     @media screen and (min-width: 1200px) {
         & {
-            // width: 1200px;
             height: 80px;
             }
         }
@@ -23,18 +13,15 @@
     &__container {
     align-items: center; 
     justify-content: space-between;
-    // height: 80px;
     height: 100%;
-    // margin: 0;
 
     @media screen and (min-width: 1200px) {
         & {
-            // margin-right: 0;
             width: 100%;
             justify-content: space-between;
+            }
         }
-    }
-    }
+        }
 }
 
 // ustawić przy 1200px kontakty dp prawej
