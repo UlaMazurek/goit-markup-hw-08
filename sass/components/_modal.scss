@@ -14,6 +14,14 @@
     border-radius: 4px;
     border-style: hidden;
 
+    @media screen and (min-width: 1200px) {
+        & {
+            width: 100%;
+            max-width: 528px;
+            height: 581px;
+        }
+    }
+
     &__button {
         position: absolute;
         top: 8px;
