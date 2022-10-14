@@ -55,6 +55,19 @@
             display: flex;
             align-items: center;
             justify-content: center;
+            padding: 25px 190px;
+
+            @media screen and (min-width: 768px) and (max-width: 1199px) {
+                & {
+                    padding: 25px 134px;
+                    }
+                }
+
+            @media screen and (min-width: 1200px) {
+                & {
+                    padding: 25px 100px;
+                }
+            }
             }
 
         &__title {

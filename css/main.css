@@ -125,6 +125,11 @@ img {
   text-transform: uppercase;
   margin-bottom: 20px;
 }
+@media screen and (min-width: 1200px) {
+  .join {
+    text-align: left;
+  }
+}
 
 .btn-sign {
   width: 200px;
@@ -593,6 +598,14 @@ svg {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 30px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .text__title {
+    width: 365px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .text__title {
@@ -979,6 +992,17 @@ svg {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding: 25px 190px;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .asset__logo {
+    padding: 25px 134px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .asset__logo {
+    padding: 25px 100px;
+  }
 }
 .asset__title {
   font-weight: 700;
@@ -1278,6 +1302,28 @@ svg {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+.clients__logo--one {
+  padding: 17.71px 32px 14.25px 32px;
+}
+.clients__logo--two {
+  padding: 16px 32px;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .clients__logo--one {
+    padding: 16px 60px;
+  }
+  .clients__logo--two {
+    padding: 16px 60px;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .clients__logo--one {
+    padding: 16px 52px;
+  }
+  .clients__logo--two {
+    padding: 16px 52px;
+  }
 }
 
 /*Footer*/
@@ -1640,6 +1686,9 @@ svg {
   padding: 0;
   -ms-flex-line-pack: center;
       align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .portfolio__item {
   padding: 0;

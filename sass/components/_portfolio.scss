@@ -82,6 +82,8 @@
         gap: 30px;
         padding: 0;
         align-content: center;
+        justify-content: center;
+        // flex-grow: 1;
         }
 
     &__item {
@@ -157,6 +159,7 @@
         border-right: 1px solid $border-card-color;
         border-bottom: 1px solid $border-card-color;
         border-top: 0px;
+        // flex-grow: 1;
         }
 
     &__title {
