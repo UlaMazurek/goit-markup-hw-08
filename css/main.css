@@ -365,11 +365,6 @@ svg {
 .contact__link:active {
   color: #2196F3;
 }
-@media screen and (min-width: 768px) {
-  .contact__link__link svg {
-    padding-left: 0px;
-  }
-}
 @media screen and (min-width: 1200px) {
   .contact__link {
     font-size: 14px;
