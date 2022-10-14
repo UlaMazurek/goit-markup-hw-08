@@ -23,7 +23,7 @@
             gap: 30px;
             margin-top: 32px;
             margin-bottom: 32px;
-            width: 360px;
+            // width: 360px;
             }
         }
     
@@ -63,7 +63,7 @@
 
         &--tel {
             @extend .contact__icon;
-            padding-left: 0;
+            padding-left: 0px;
             }
         }
 

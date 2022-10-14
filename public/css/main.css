@@ -340,7 +340,6 @@ svg {
     gap: 30px;
     margin-top: 32px;
     margin-bottom: 32px;
-    width: 360px;
   }
 }
 .contact__link {
@@ -378,7 +377,7 @@ svg {
   fill: currentColor;
 }
 .contact__icon--tel {
-  padding-left: 0;
+  padding-left: 0px;
 }
 
 .menu-toggle {
