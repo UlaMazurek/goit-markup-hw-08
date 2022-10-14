@@ -480,9 +480,6 @@ svg {
   margin: 0;
   list-style: none;
 }
-.mobile-contact__list > li:not(:last-child) {
-  margin-bottom: 32px;
-}
 .mobile-contact__link {
   font-weight: 500;
   font-size: 24px;
@@ -514,12 +511,11 @@ svg {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   width: 100%;
-  max-width: 480px;
 }
 .mobile-pages > li:not(:last-child) {
-  margin-right: 20px;
+  margin-right: 10px;
 }
-.mobile-pages__link {
+.mobile-pages__link, .mobile-pages__link--last {
   color: #2196F3;
   text-decoration: none;
   font-weight: 500;
@@ -528,6 +524,11 @@ svg {
   letter-spacing: 0.02em;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+  padding-right: 10px;
+}
+.mobile-pages__link--last {
+  border: none;
 }
 
 /*Main text section*/
@@ -1626,7 +1627,7 @@ svg {
 }
 @media screen and (min-width: 320px) {
   .portfolio__button {
-    padding: 6px 13px;
+    padding: 6px 22px;
   }
 }
 .portfolio__grid {
