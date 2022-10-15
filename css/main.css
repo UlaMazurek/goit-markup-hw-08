@@ -1309,12 +1309,18 @@ svg {
 .clients__logo--two {
   padding: 16px 32px;
 }
+.clients__logo--three {
+  padding: 16px 32px;
+}
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .clients__logo--one {
     padding: 16px 60px;
   }
   .clients__logo--two {
     padding: 16px 60px;
+  }
+  .clients__logo--three {
+    padding: 16px 55px;
   }
 }
 @media screen and (min-width: 480px) and (max-width: 767px) {
@@ -1323,6 +1329,9 @@ svg {
   }
   .clients__logo--two {
     padding: 16px 52px;
+  }
+  .clients__logo--three {
+    padding: 16px 46px;
   }
 }
 
