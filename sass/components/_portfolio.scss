@@ -83,7 +83,12 @@
         padding: 0;
         align-content: center;
         justify-content: center;
-        // flex-grow: 1;
+
+        @media screen and (min-width: 768px) and (max-width: 1199px) {
+            & {
+                justify-content: flex-start;
+                }
+            }
         }
 
     &__item {

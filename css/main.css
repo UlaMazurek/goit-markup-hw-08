@@ -1700,6 +1700,13 @@ svg {
       -ms-flex-pack: center;
           justify-content: center;
 }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .portfolio__grid {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+}
 .portfolio__item {
   padding: 0;
   text-align: left;
